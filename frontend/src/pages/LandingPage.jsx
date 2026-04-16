@@ -119,14 +119,14 @@ export const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Use Case 1 */}
             <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
-              <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-200">
                 <h3 className="text-2xl font-semibold text-black">Agents Can Call Agents</h3>
               </div>
               <div className="p-8">
-                <div className="bg-black p-6 font-mono text-white text-sm mb-6">
+                <div className="bg-gray-100 p-6 font-mono text-black text-sm mb-6">
                   .agent install my-workflow<br/>
-                  <span className="text-gray-400"># Automatically uses email-parser.agent</span><br/>
-                  <span className="text-gray-400"># Automatically uses summarizer.agent</span>
+                  <span className="text-gray-500"># Automatically uses email-parser.agent</span><br/>
+                  <span className="text-gray-500"># Automatically uses summarizer.agent</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Build complex workflows by composing simple agents. Your agent declares dependencies, the runtime fetches them automatically.
@@ -139,14 +139,14 @@ export const LandingPage = () => {
 
             {/* Use Case 2 */}
             <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
-              <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-200">
                 <h3 className="text-2xl font-semibold text-black">Find Tested Agents</h3>
               </div>
               <div className="p-8">
-                <div className="bg-black p-6 font-mono text-white text-sm mb-6">
+                <div className="bg-gray-100 p-6 font-mono text-black text-sm mb-6">
                   .agent search "email automation"<br/>
-                  <span className="text-gray-400"># Browse 1,200+ working agents</span><br/>
-                  <span className="text-gray-400"># See ratings, downloads, reviews</span>
+                  <span className="text-gray-500"># Browse 1,200+ working agents</span><br/>
+                  <span className="text-gray-500"># See ratings, downloads, reviews</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Don't build from scratch. Browse the registry. See what's already working. Check ratings and download counts. Install instantly.
@@ -159,14 +159,14 @@ export const LandingPage = () => {
 
             {/* Use Case 3 */}
             <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
-              <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-200">
                 <h3 className="text-2xl font-semibold text-black">Share Your Agents</h3>
               </div>
               <div className="p-8">
-                <div className="bg-black p-6 font-mono text-white text-sm mb-6">
+                <div className="bg-gray-100 p-6 font-mono text-black text-sm mb-6">
                   .agent publish my-assistant.agent<br/>
-                  <span className="text-gray-400"># Uploads to registry</span><br/>
-                  <span className="text-gray-400"># Anyone can install it</span>
+                  <span className="text-gray-500"># Uploads to registry</span><br/>
+                  <span className="text-gray-500"># Anyone can install it</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Built something useful? Package it as a .agent file. Publish to the registry. Or airdrop directly to friends. No deployment. No infrastructure.
@@ -178,15 +178,15 @@ export const LandingPage = () => {
             </div>
 
             {/* Use Case 4 */}
-            <div className="border-2 border-[#d97757] overflow-hidden">
-              <div className="bg-[#d97757] p-8 border-b-2 border-[#d97757]">
-                <h3 className="text-2xl font-semibold text-white">Build on Each Other</h3>
+            <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-200">
+                <h3 className="text-2xl font-semibold text-black">Build on Each Other</h3>
               </div>
               <div className="p-8">
-                <div className="bg-black p-6 font-mono text-white text-sm mb-6">
+                <div className="bg-gray-100 p-6 font-mono text-black text-sm mb-6">
                   .agent fork email-parser<br/>
-                  <span className="text-gray-400"># Extend existing agents</span><br/>
-                  <span className="text-gray-400"># Contribute improvements back</span>
+                  <span className="text-gray-500"># Extend existing agents</span><br/>
+                  <span className="text-gray-500"># Contribute improvements back</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Fork agents. Extend them. Contribute back. Build on top of what others created. The agent economy thrives on collaboration.
@@ -250,23 +250,14 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-32 px-6 border-t border-gray-200 bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-black text-[72px] leading-tight mb-8">
-            Start Building.
-          </h2>
-          <p className="text-gray-400 mb-12 text-lg">
-            Browse the registry. Install agents. Share yours.
+      {/* Footer */}
+      <footer className="py-12 px-6 border-t border-gray-200 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-sm text-gray-500">
+            Built for the agent economy. Share your AI, transform your workflow.
           </p>
-          <Link 
-            to="/registry"
-            className="inline-block px-8 py-4 bg-[#d97757] text-white text-sm font-medium hover:bg-[#c86646] transition-colors"
-          >
-            Explore Registry
-          </Link>
         </div>
-      </section>
+      </footer>
 
     </div>
   );
