@@ -2,6 +2,10 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import RegistryPage from "./pages/RegistryPage";
+import "@fontsource/playfair-display/900.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
 
 function App() {
   return (
