@@ -24,7 +24,7 @@ export const LandingPage = () => {
           <h1 className="font-['Playfair_Display'] font-black text-[120px] leading-[0.95] text-black mb-12">
             Agents are the new apps.
             <br />
-            <span className="text-[#d97757]">Sharing them</span>
+            <span className="text-[#d97757]">Sharing</span> them
             <br />
             shouldn't be hard.
           </h1>
@@ -77,17 +77,11 @@ export const LandingPage = () => {
             <p className="mb-6">
               <span className="font-mono bg-gray-200 px-2 py-1">.ipa</span> files let you share iOS apps. <span className="font-mono bg-gray-200 px-2 py-1">.apk</span> files let you share Android apps. Agents had nothing. Until now.
             </p>
-            <p className="mb-6 text-black font-semibold text-lg">
-              The .agent format is the missing piece.
-            </p>
-            <p className="mb-6">
-              One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow. They open the file and the agent runs.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Solution - .agent file - WHITE BG */}
+      {/* Solution - .agent file - COMPACT */}
       <section className="py-20 px-8 bg-white border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-8">The Solution</div>
@@ -127,136 +121,155 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* agentbox Commands */}
-      <section className="py-20 px-8 border-t-2 border-gray-300">
+      {/* Solution - Compact Newspaper Layout */}
+      <section className="py-16 px-8 bg-white border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <div className="bg-black text-white p-8 font-mono text-sm mb-8">
-                <div className="text-gray-400 mb-2"># bundle your agent directory into .agent</div>
-                <div className="text-xl mb-6">$ agentbox pack ./my-tax-agent</div>
-                <div className="text-[#d97757] mb-6">✓ packed → my-tax-agent.agent (2.1 MB)</div>
-                
-                <div className="text-gray-400 mb-2 mt-8"># publish to The Nest registry</div>
-                <div className="text-xl mb-6">$ agentbox publish --name @piyush/tax-agent</div>
-                <div className="text-[#d97757] mb-6">✓ live at the-nest.sh/@piyush/tax-agent</div>
-                
-                <div className="text-gray-400 mb-2 mt-8"># friend's machine - install from registry or .agent file</div>
-                <div className="text-xl mb-6">$ agentbox install @piyush/tax-agent</div>
-                <div className="text-[#d97757] mb-6">✓ installed in 2.8s</div>
-                
-                <div className="text-xl mb-4">$ agentbox run tax-agent -m "What can I deduct?"</div>
-                <div className="text-gray-400">→ running...</div>
-              </div>
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Solution</div>
+          
+          <h2 className="font-['Playfair_Display'] font-black text-[56px] leading-tight text-black mb-8">
+            Introducing <span className="font-mono text-[#d97757]">.agent</span>
+          </h2>
+
+          <div className="columns-3 gap-8 text-base text-gray-700 leading-relaxed mb-8">
+            <p className="mb-4 text-black font-semibold text-lg">
+              The .agent format is the missing piece.
+            </p>
+            <p className="mb-4">
+              One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow.
+            </p>
+            <p className="mb-4 text-lg italic">
+              They open the file and the agent runs.
+            </p>
+          </div>
+
+          <div className="border-2 border-[#d97757] bg-[#d97757]/5 p-6 inline-block">
+            <div className="font-mono text-xs text-gray-600 mb-3">
+              <div>system_prompt • tools & scripts • knowledge files</div>
+              <div>model config • metadata + version</div>
+            </div>
+            <div className="text-4xl font-bold text-[#d97757] mb-2">.agent</div>
+            <div className="text-xs text-gray-500">agent pack → AirDrop</div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works - Compact */}
+      <section className="py-16 px-8 border-t-2 border-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">How It Works</div>
+          <h2 className="text-4xl font-['Playfair_Display'] font-black text-black mb-8">Five Commands</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-black text-white p-6 font-mono text-xs">
+              <div className="text-gray-400 mb-1"># bundle</div>
+              <div className="mb-3">$ agentbox pack ./my-tax-agent</div>
+              <div className="text-[#d97757] mb-4 text-xs">✓ packed → my-tax-agent.agent (2.1 MB)</div>
+              
+              <div className="text-gray-400 mb-1 mt-4"># publish</div>
+              <div className="mb-3">$ agentbox publish --name @piyush/tax-agent</div>
+              <div className="text-[#d97757] mb-4 text-xs">✓ live at the-nest.sh/@piyush/tax-agent</div>
+              
+              <div className="text-gray-400 mb-1 mt-4"># install & run</div>
+              <div className="mb-1">$ agentbox install @piyush/tax-agent</div>
+              <div className="text-[#d97757] mb-3 text-xs">✓ installed in 2.8s</div>
+              <div>$ agentbox run tax-agent -m "What can I deduct?"</div>
             </div>
 
-            <div className="space-y-6">
-              <div className="border-2 border-gray-300 p-6">
-                <h3 className="text-2xl font-bold text-[#d97757] mb-3">agentbox pack</h3>
-                <p className="text-gray-700">Bundle agent dir into a signed .agent file</p>
+            <div className="grid grid-cols-1 gap-3">
+              <div className="border border-gray-300 p-4">
+                <h3 className="text-lg font-bold text-[#d97757] mb-1">pack</h3>
+                <p className="text-xs text-gray-700">Bundle into signed .agent file</p>
               </div>
-
-              <div className="border-2 border-gray-300 p-6">
-                <h3 className="text-2xl font-bold text-[#d97757] mb-3">agentbox publish</h3>
-                <p className="text-gray-700">Push to The Nest registry under @you/name</p>
+              <div className="border border-gray-300 p-4">
+                <h3 className="text-lg font-bold text-[#d97757] mb-1">publish</h3>
+                <p className="text-xs text-gray-700">Push to The Nest under @you/name</p>
               </div>
-
-              <div className="border-2 border-gray-300 p-6">
-                <h3 className="text-2xl font-bold text-[#d97757] mb-3">agentbox install</h3>
-                <p className="text-gray-700">Install from registry or direct .agent file</p>
+              <div className="border border-gray-300 p-4">
+                <h3 className="text-lg font-bold text-[#d97757] mb-1">install</h3>
+                <p className="text-xs text-gray-700">Install from registry or .agent file</p>
               </div>
-
-              <div className="border-2 border-gray-300 p-6">
-                <h3 className="text-2xl font-bold text-[#d97757] mb-3">agentbox run</h3>
-                <p className="text-gray-700">Execute an installed agent with a message</p>
+              <div className="border border-gray-300 p-4">
+                <h3 className="text-lg font-bold text-[#d97757] mb-1">run</h3>
+                <p className="text-xs text-gray-700">Execute agent with a message</p>
               </div>
-
-              <div className="border-2 border-gray-300 p-6">
-                <h3 className="text-2xl font-bold text-[#d97757] mb-3">agentbox unpack</h3>
-                <p className="text-gray-700">Inspect & extract contents of any .agent file</p>
+              <div className="border border-gray-300 p-4">
+                <h3 className="text-lg font-bold text-[#d97757] mb-1">unpack</h3>
+                <p className="text-xs text-gray-700">Inspect contents of any .agent file</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Agent Swarms */}
-      <section className="py-20 px-8 bg-gray-50 border-t-2 border-gray-300">
+      {/* Agent Swarms - Interactive */}
+      <section className="py-16 px-8 bg-gray-50 border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-12">
-            <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">Agent Swarms</div>
-            <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight mb-4">
-              Agents that call
-              <br />
-              <span className="italic text-[#d97757]">other agents.</span>
-            </h2>
-            <p className="text-xl text-gray-700">
-              agentbox turns The Nest into a living dependency graph.
-            </p>
-          </div>
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">Agent Swarms</div>
+          <h2 className="text-5xl font-['Playfair_Display'] font-black text-black leading-tight mb-2">
+            Agents that call <span className="italic text-[#d97757]">other agents.</span>
+          </h2>
+          <p className="text-lg text-gray-700 mb-8">
+            Your orchestrator spawns sub-agents on demand — like npm install, at runtime.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Your orchestrator spawns sub-agents on demand — like npm install, at runtime.
-              </p>
-
-              <div className="bg-black text-white p-6 font-mono text-xs mb-8">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="w-3 h-3 rounded-full bg-red-500"></span>
-                  <span className="w-3 h-3 rounded-full bg-yellow-500"></span>
-                  <span className="w-3 h-3 rounded-full bg-green-500"></span>
-                  <span className="ml-2 text-gray-400">orchestrator.agent — claude code</span>
+          <div className="grid md:grid-cols-5 gap-6">
+            <div className="md:col-span-2">
+              <div className="bg-black text-white p-5 font-mono text-[10px] h-full">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-2 h-2 rounded-full bg-red-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-yellow-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                  <span className="ml-2 text-gray-400">orchestrator.agent</span>
                 </div>
-                <div className="text-gray-400 mb-2"># Claude spawns sub-agents from The Nest</div>
-                <div className="mb-4">use agentbox</div>
-                <div className="mb-6">task: research + write + post</div>
-                <div className="text-[#d97757] mb-2">→ agentbox run @sara/research-assistant \</div>
-                <div className="text-[#d97757] mb-2 ml-8">-m "STOPIC" | pipe to \</div>
-                <div className="mb-4"></div>
-                <div className="text-[#d97757] mb-2">agentbox run @alex/writer-agent \</div>
-                <div className="text-[#d97757] mb-2 ml-8">--style blog | pipe to \</div>
-                <div className="mb-4"></div>
-                <div className="text-[#d97757]">agentbox run @piyush/linkedin-poster</div>
+                <div className="text-gray-400 mb-2"># Claude spawns sub-agents</div>
+                <div className="mb-3">use agentbox</div>
+                <div className="mb-4">task: research + write + post</div>
+                <div className="text-[#d97757] text-[9px] mb-1">→ agentbox run @sara/research \</div>
+                <div className="text-[#d97757] text-[9px] mb-3 ml-4">-m "STOPIC" | pipe to \</div>
+                <div className="text-[#d97757] text-[9px] mb-1">agentbox run @alex/writer \</div>
+                <div className="text-[#d97757] text-[9px] mb-3 ml-4">--style blog | pipe to \</div>
+                <div className="text-[#d97757] text-[9px]">agentbox run @piyush/linkedin-poster</div>
               </div>
             </div>
 
-            <div className="border-2 border-gray-300 p-8">
-              <div className="text-center mb-8">
-                <div className="inline-block border-2 border-[#d97757] bg-[#d97757]/10 px-8 py-4 mb-8">
-                  <div className="font-bold text-lg">orchestrator</div>
-                  <div className="text-sm text-gray-600">your agent</div>
+            <div className="md:col-span-3">
+              <div className="border-2 border-gray-300 p-6 bg-white h-full">
+                <div className="text-center mb-4">
+                  <div className="inline-block border-2 border-[#d97757] bg-[#d97757]/10 px-6 py-3 mb-4 hover:bg-[#d97757]/20 transition-all cursor-pointer">
+                    <div className="font-bold">orchestrator</div>
+                    <div className="text-xs text-gray-600">your agent</div>
+                  </div>
                 </div>
-              </div>
 
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="border-2 border-gray-300 p-4 text-center">
-                  <div className="text-[#d97757] font-mono text-xs mb-2">@sara/</div>
-                  <div className="text-xs">research</div>
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
+                    <div className="text-[#d97757] font-mono text-xs mb-1">@sara/</div>
+                    <div className="text-[10px]">research</div>
+                  </div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
+                    <div className="text-[#d97757] font-mono text-xs mb-1">@alex/</div>
+                    <div className="text-[10px]">writer</div>
+                  </div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
+                    <div className="text-[#d97757] font-mono text-xs mb-1">@piyush/</div>
+                    <div className="text-[10px]">poster</div>
+                  </div>
                 </div>
-                <div className="border-2 border-gray-300 p-4 text-center">
-                  <div className="text-[#d97757] font-mono text-xs mb-2">@alex/</div>
-                  <div className="text-xs">writer</div>
+
+                <div className="text-center mb-3">
+                  <div className="text-[10px] text-gray-500">from The Nest</div>
+                  <div className="h-8 border-l border-dashed border-gray-300 mx-auto"></div>
                 </div>
-                <div className="border-2 border-gray-300 p-4 text-center">
-                  <div className="text-[#d97757] font-mono text-xs mb-2">@piyush/</div>
-                  <div className="text-xs">poster</div>
+
+                <div className="border-2 border-[#d97757] bg-[#d97757]/10 p-4 text-center">
+                  <div className="font-bold text-sm mb-1">published LinkedIn post</div>
+                  <div className="text-[10px] text-gray-600">zero human intervention</div>
                 </div>
-              </div>
 
-              <div className="text-center mb-8">
-                <div className="text-xs text-gray-500 mb-2">from The Nest</div>
-                <div className="h-12 border-l-2 border-dashed border-gray-300 mx-auto"></div>
+                <p className="text-[10px] text-gray-500 mt-3 text-center">
+                  sub-agents install automatically if not cached
+                </p>
               </div>
-
-              <div className="border-2 border-[#d97757] bg-[#d97757]/10 p-6 text-center">
-                <div className="font-bold mb-2">published LinkedIn post</div>
-                <div className="text-xs text-gray-600">zero human intervention</div>
-              </div>
-
-              <p className="text-xs text-gray-500 mt-4 text-center">
-                sub-agents install automatically if not cached
-              </p>
             </div>
           </div>
         </div>
