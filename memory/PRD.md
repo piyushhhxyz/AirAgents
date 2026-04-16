@@ -1,30 +1,39 @@
 # AgentDrop - Product Requirements Document
 
-## Vision
-Agent registry platform with STUNNING design inspired by neural-share.emergent.host
+## Original Problem Statement
+Apps have app stores, code has GitHub, but agents have no distribution layer. Make sharing AI agents as easy as airdropping files - like npm for personal AI.
 
-## Design Specifications (FINAL)
-- **Typography**: Playfair Display (900 weight) for headlines, Inter for body
-- **Monochromatic**: Pure black/white/gray palette
-- **NO ICONS**: Text and numbers only
-- **Large Headlines**: 96-120px Playfair Display with tight leading
-- **Uniform Cards**: 3-column grid, equal height cards
-- **Hover States**: Border changes from gray to black
-- **Clean Sections**: Bordered sections with proper hierarchy
+## Core Concept
+- **Airdrop agents** with a single command
+- **npm-like composability** - agents can build on other agents  
+- **Discovery registry** - browse, search, install
+- **No setup hell** - one command installs everything
+
+## Design (FINAL - Approved)
+- **Typography**: Playfair Display (900) for headlines, Inter for body
+- **Color**: Monochrome with #d97757 accent for CTAs
+- **Layout**: Uniform 3-column grid, clean cards
+- **Hover**: Border transitions (gray → coral)
+- **Content**: Real problem, command examples, composability
 
 ## Completed (Dec 2025)
-✅ Landing page with Playfair Display typography
-✅ Uniform 3-column agent card grid
-✅ Hover states with border transitions
-✅ Search and category filter
-✅ Clean, editorial design aesthetic
-✅ Proper Inter/Playfair font loading
-✅ Problem statement cards with hover
-✅ Stats section with star rating
-✅ Copy to clipboard functionality
+✅ Landing page with airdrop concept
+✅ Real problem: ZIP files, GitHub repos, 30-min calls
+✅ Solution: Command-based installation (.agent install)
+✅ npm-like composability examples
+✅ Uniform agent card grid with color accents
+✅ "What it does" section in cards (less text)
+✅ Copy to clipboard with coral CTA
+✅ Search and category filters
+
+## Content Highlights
+- Hero: "Airdrop Your AI Agents"
+- Problem cards: No send button, discovery, composability, setup hell
+- Solution: Shows .agent install commands
+- Composing example: news-curator → summarizer → slack-bot
 
 ## Next Steps
-- Get final design approval
 - Backend development (MongoDB + FastAPI)
-- Frontend-backend integration
-- Authentication system
+- Real agent data instead of mocks
+- User authentication for creators
+- Agent upload functionality
