@@ -24,7 +24,7 @@ export const LandingPage = () => {
           <h1 className="font-['Playfair_Display'] font-black text-[120px] leading-[0.95] text-black mb-12">
             Agents are the new apps.
             <br />
-            <span className="text-gray-400">Sharing them</span>
+            <span className="text-[#d97757]">Sharing them</span>
             <br />
             shouldn't be hard.
           </h1>
@@ -41,7 +41,7 @@ export const LandingPage = () => {
             <div className="border-l-4 border-black pl-8">
               <Link 
                 to="/registry"
-                className="inline-block px-10 py-5 bg-black text-white text-lg font-semibold hover:bg-[#d97757] transition-all"
+                className="inline-block px-10 py-5 bg-[#d97757] text-white text-lg font-semibold hover:bg-[#c86646] transition-all"
               >
                 Browse Agent Registry →
               </Link>
@@ -50,37 +50,74 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* Solution - .agent file */}
-      <section className="py-20 px-8 bg-[#d97757]">
+      {/* The Problem - MOVED BEFORE SOLUTION */}
+      <section className="py-20 px-8 bg-gray-50 border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
-          <div className="text-xs uppercase tracking-widest text-white/70 mb-8">The Solution</div>
+          <div className="mb-16">
+            <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Problem</div>
+            <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight">
+              Agents Are
+              <br />
+              Trapped Inside
+              <br />
+              <span className="italic text-[#d97757]">Platforms.</span>
+            </h2>
+          </div>
+
+          <div className="columns-3 gap-12 text-base text-gray-700 leading-relaxed">
+            <p className="mb-6">
+              You've built a genuinely useful AI agent. It saves you hours every day. Your colleague sees it and wants it.
+            </p>
+            <p className="mb-6 font-bold text-black text-xl">
+              Now what?
+            </p>
+            <p className="mb-6">
+              If you built it in ChatGPT, it's locked in the GPT Store. Your friend needs a ChatGPT account. If you built it in Claude, it lives in your Projects—untransferable. If you built it yourself, they need to clone your repo, configure environments, get API keys, and pray nothing breaks.
+            </p>
+            <p className="mb-6">
+              <span className="font-mono bg-gray-200 px-2 py-1">.ipa</span> files let you share iOS apps. <span className="font-mono bg-gray-200 px-2 py-1">.apk</span> files let you share Android apps. Agents had nothing. Until now.
+            </p>
+            <p className="mb-6 text-black font-semibold text-lg">
+              The .agent format is the missing piece.
+            </p>
+            <p className="mb-6">
+              One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow. They open the file and the agent runs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution - .agent file - WHITE BG */}
+      <section className="py-20 px-8 bg-white border-t-2 border-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-8">The Solution</div>
           
-          <h2 className="font-['Playfair_Display'] font-black text-[80px] leading-[0.95] text-white mb-12">
+          <h2 className="font-['Playfair_Display'] font-black text-[80px] leading-[0.95] text-black mb-12">
             Introducing
             <br />
-            <span className="font-mono">.agent</span>
+            <span className="font-mono text-[#d97757]">.agent</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-16 items-center mb-12">
             <div>
-              <p className="text-3xl text-white leading-relaxed mb-8 italic">
+              <p className="text-3xl text-gray-700 leading-relaxed mb-8 italic">
                 One file. Your entire agent inside.
               </p>
-              <p className="text-3xl text-white leading-relaxed font-bold">
+              <p className="text-3xl text-black leading-relaxed font-bold">
                 AirDrop it. Done.
               </p>
             </div>
 
-            <div className="border-4 border-white/30 p-12 text-center">
-              <div className="font-mono text-white mb-6">
-                <div className="text-sm opacity-70 mb-2">system_prompt</div>
-                <div className="text-sm opacity-70 mb-2">tools & scripts</div>
-                <div className="text-sm opacity-70 mb-2">knowledge files</div>
-                <div className="text-sm opacity-70 mb-2">model config</div>
-                <div className="text-sm opacity-70 mb-2">metadata + version</div>
+            <div className="border-4 border-[#d97757] bg-[#d97757]/10 p-12 text-center">
+              <div className="font-mono text-gray-700 mb-6">
+                <div className="text-sm mb-2">system_prompt</div>
+                <div className="text-sm mb-2">tools & scripts</div>
+                <div className="text-sm mb-2">knowledge files</div>
+                <div className="text-sm mb-2">model config</div>
+                <div className="text-sm mb-2">metadata + version</div>
               </div>
-              <div className="text-6xl font-bold text-white">.agent</div>
-              <div className="mt-6 flex justify-between items-center text-sm text-white/70">
+              <div className="text-6xl font-bold text-[#d97757]">.agent</div>
+              <div className="mt-6 flex justify-between items-center text-sm text-gray-600">
                 <span>agent pack</span>
                 <span>→</span>
                 <span>AirDrop</span>
