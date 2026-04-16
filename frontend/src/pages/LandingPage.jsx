@@ -24,7 +24,7 @@ export const LandingPage = () => {
           <h1 className="font-['Playfair_Display'] font-black text-[120px] leading-[0.95] text-black mb-12">
             Agents are the new apps.
             <br />
-            <span className="text-gray-800">Sharing</span> them
+            <span className="text-[#555555]">Sharing</span> them
             <br />
             shouldn't be hard.
           </h1>
@@ -60,7 +60,7 @@ export const LandingPage = () => {
               <br />
               Trapped Inside
               <br />
-              <span className="italic text-gray-700">Platforms.</span>
+              <span className="italic text-[#555555]">Platforms.</span>
             </h2>
           </div>
 
@@ -96,7 +96,7 @@ export const LandingPage = () => {
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Solution</div>
           
           <h2 className="font-['Playfair_Display'] font-black text-[64px] leading-[0.95] text-black mb-12">
-            Introducing <span className="font-mono text-gray-900">.agent</span>
+            Introducing <span className="font-mono text-[#555555]">.agent</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -126,7 +126,7 @@ export const LandingPage = () => {
                 <div className="pl-0">└── metadata.yaml</div>
               </div>
               <div className="mt-6 pt-4 border-t border-gray-300">
-                <div className="text-black font-bold text-lg mb-1">.agent</div>
+                <div className="text-[#555555] font-bold text-lg mb-1">.agent</div>
                 <div className="text-xs text-gray-500">packed, signed, ready to share</div>
               </div>
             </div>
@@ -158,23 +158,23 @@ export const LandingPage = () => {
 
             <div className="grid grid-cols-1 gap-3">
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-black mb-1">pack</h3>
+                <h3 className="text-lg font-bold text-[#555555] mb-1">pack</h3>
                 <p className="text-xs text-gray-700">Bundle into signed .agent file</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-black mb-1">publish</h3>
+                <h3 className="text-lg font-bold text-[#555555] mb-1">publish</h3>
                 <p className="text-xs text-gray-700">Push to The Nest under @you/name</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-black mb-1">install</h3>
+                <h3 className="text-lg font-bold text-[#555555] mb-1">install</h3>
                 <p className="text-xs text-gray-700">Install from registry or .agent file</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-black mb-1">run</h3>
+                <h3 className="text-lg font-bold text-[#555555] mb-1">run</h3>
                 <p className="text-xs text-gray-700">Execute agent with a message</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-black mb-1">unpack</h3>
+                <h3 className="text-lg font-bold text-[#555555] mb-1">unpack</h3>
                 <p className="text-xs text-gray-700">Inspect contents of any .agent file</p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export const LandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">Agent Swarms</div>
           <h2 className="text-5xl font-['Playfair_Display'] font-black text-black leading-tight mb-2">
-            Agents that call <span className="italic text-gray-700">other agents.</span>
+            Agents that call <span className="italic text-[#555555]">other agents.</span>
           </h2>
           <p className="text-lg text-gray-700 mb-8">
             Your orchestrator spawns sub-agents on demand — like npm install, at runtime.
@@ -216,23 +216,23 @@ export const LandingPage = () => {
             <div className="md:col-span-3">
               <div className="border-2 border-gray-300 p-6 bg-white h-full">
                 <div className="text-center mb-4">
-                  <div className="inline-block border-2 border-black bg-gray-100 px-6 py-3 mb-4 hover:bg-gray-200 transition-all cursor-pointer">
+                  <div className="inline-block border-2 border-[#555555] bg-gray-100 px-6 py-3 mb-4 hover:bg-gray-200 transition-all cursor-pointer">
                     <div className="font-bold">orchestrator</div>
                     <div className="text-xs text-gray-600">your agent</div>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3 mb-4">
-                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
-                    <div className="text-black font-mono text-xs mb-1">@sara/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#555555] transition-all cursor-pointer">
+                    <div className="text-[#555555] font-mono text-xs mb-1">@sara/</div>
                     <div className="text-[10px]">research</div>
                   </div>
-                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
-                    <div className="text-black font-mono text-xs mb-1">@alex/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#555555] transition-all cursor-pointer">
+                    <div className="text-[#555555] font-mono text-xs mb-1">@alex/</div>
                     <div className="text-[10px]">writer</div>
                   </div>
-                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
-                    <div className="text-black font-mono text-xs mb-1">@piyush/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-[#555555] transition-all cursor-pointer">
+                    <div className="text-[#555555] font-mono text-xs mb-1">@piyush/</div>
                     <div className="text-[10px]">poster</div>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export const LandingPage = () => {
                   <div className="h-8 border-l border-dashed border-gray-300 mx-auto"></div>
                 </div>
 
-                <div className="border-2 border-black bg-gray-100 p-4 text-center">
+                <div className="border-2 border-[#555555] bg-gray-100 p-4 text-center">
                   <div className="font-bold text-sm mb-1">published LinkedIn post</div>
                   <div className="text-[10px] text-gray-600">zero human intervention</div>
                 </div>
@@ -262,7 +262,7 @@ export const LandingPage = () => {
           <div className="mb-12">
             <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Platform</div>
             <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight mb-6">
-              Introducing <span className="italic text-gray-800">The Nest</span> —
+              Introducing <span className="italic text-[#555555]">The Nest</span> —
             </h2>
             <p className="text-2xl text-gray-700 italic">
               the agent registry. Think npm, but for AI agents.
@@ -271,14 +271,14 @@ export const LandingPage = () => {
 
           <div className="bg-gray-50 border-2 border-gray-300 p-8 mb-6">
             <div className="flex justify-between items-center mb-4 pb-4 border-b-2 border-gray-300">
-              <div className="font-mono text-black text-xl">the-nest.sh</div>
+              <div className="font-mono text-[#555555] text-xl">the-nest.sh</div>
               <div className="text-xs text-gray-500">12,847 agents · 2.1M installs</div>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center justify-between border-l-4 border-black pl-6 py-4 bg-white">
+              <div className="flex items-center justify-between border-l-4 border-[#555555] pl-6 py-4 bg-white">
                 <div>
-                  <div className="font-mono text-black font-bold mb-1">@piyush/tax-agent</div>
+                  <div className="font-mono text-[#555555] font-bold mb-1">@piyush/tax-agent</div>
                   <div className="text-sm text-gray-600">AI tax advisor · bundled knowledge · GPT-4</div>
                 </div>
                 <div className="text-right">
