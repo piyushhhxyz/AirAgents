@@ -3,9 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { AgentCard } from '../components/AgentCard';
 import { mockAgents, categories } from '../data/mock';
-import { Search, Filter, Sparkles } from 'lucide-react';
 import { Input } from '../components/ui/input';
-import { Badge } from '../components/ui/badge';
 
 export const RegistryPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -33,57 +31,54 @@ export const RegistryPage = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-12 px-6 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm text-gray-700 mb-6 shadow-sm border border-gray-200">
-            <Sparkles className="w-4 h-4 text-[#d97757]" />
-            {mockAgents.length} agents ready to deploy
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Agent Registry
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Discover, copy, and deploy AI agents built by creators worldwide. One command to transform your workflow.
-          </p>
+      <section className="pt-40 pb-20 px-6 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="text-xs uppercase tracking-widest text-gray-400 mb-8">
+              {mockAgents.length} agents ready to deploy
+            </div>
+            <h1 className="text-5xl md:text-6xl font-light text-black mb-8">
+              Agent Registry
+            </h1>
+            <p className="text-sm text-gray-600 max-w-2xl mx-auto mb-12">
+              Discover, copy, and deploy AI agents built by creators worldwide. One command to transform your workflow.
+            </p>
 
-          {/* Search Bar */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            {/* Search Bar */}
+            <div className="max-w-2xl mx-auto mb-12">
               <Input
                 type="text"
-                placeholder="Search agents by name, description, or tags..."
+                placeholder="Search agents..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-12 pr-4 py-6 text-base rounded-xl border-gray-300 focus:border-[#d97757] focus:ring-[#d97757]"
+                className="px-4 py-3 text-sm border-gray-300 focus:border-black focus:ring-0"
               />
             </div>
-          </div>
 
-          {/* Category Filter */}
-          <div className="flex items-center justify-center gap-2 flex-wrap">
-            <Filter className="w-4 h-4 text-gray-400" />
-            {categories.map(cat => (
-              <button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                  selectedCategory === cat.id
-                    ? 'bg-gray-900 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                {cat.name} ({cat.count})
-              </button>
-            ))}
+            {/* Category Filter */}
+            <div className="flex items-center justify-center gap-2 flex-wrap">
+              {categories.map(cat => (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`px-4 py-2 text-xs font-normal transition-all ${
+                    selectedCategory === cat.id
+                      ? 'bg-black text-white'
+                      : 'bg-white text-gray-600 hover:border-black border border-gray-200'
+                  }`}
+                >
+                  {cat.name} ({cat.count})
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Results Count */}
-      <section className="px-6 py-4">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm text-gray-600">
+      <section className="px-6 py-6 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-xs text-gray-500">
             {filteredAgents.length} agent{filteredAgents.length !== 1 ? 's' : ''} found
             {searchQuery && ` for "${searchQuery}"`}
           </p>
@@ -92,11 +87,10 @@ export const RegistryPage = () => {
 
       {/* Featured Agents Section */}
       {featuredAgents.length > 0 && (
-        <section className="px-6 py-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center gap-2 mb-6">
-              <Sparkles className="w-5 h-5 text-[#d97757]" />
-              <h2 className="text-2xl font-bold text-gray-900">Featured Agents</h2>
+        <section className="px-6 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-2 mb-8">
+              <h2 className="text-2xl font-light text-black">Featured Agents</h2>
             </div>
             
             {/* Bento Grid Layout for Featured */}
@@ -128,9 +122,9 @@ export const RegistryPage = () => {
 
       {/* All Agents Section */}
       {regularAgents.length > 0 && (
-        <section className="px-6 py-8">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+        <section className="px-6 py-16 border-t border-gray-200">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl font-light text-black mb-8">
               {featuredAgents.length > 0 ? 'All Agents' : 'Agents'}
             </h2>
             
@@ -155,21 +149,18 @@ export const RegistryPage = () => {
 
       {/* No Results */}
       {filteredAgents.length === 0 && (
-        <section className="px-6 py-20">
+        <section className="px-6 py-32">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
-              <Search className="w-8 h-8 text-gray-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">No agents found</h3>
-            <p className="text-gray-600 mb-6">
-              Try adjusting your search or filter to find what you're looking for
+            <h3 className="text-2xl font-light text-black mb-2">No agents found</h3>
+            <p className="text-sm text-gray-600 mb-8">
+              Try adjusting your search or filter
             </p>
             <button
               onClick={() => {
                 setSearchQuery('');
                 setSelectedCategory('all');
               }}
-              className="px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors"
+              className="px-6 py-3 bg-black text-white text-sm font-normal hover:bg-gray-800 transition-colors"
             >
               Clear filters
             </button>
