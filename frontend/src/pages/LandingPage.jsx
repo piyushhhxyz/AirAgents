@@ -148,32 +148,38 @@ export const LandingPage = () => {
             </h2>
           </div>
 
-          <div className="columns-3 gap-10 text-base text-gray-700 leading-relaxed">
-            <div className="mb-10 break-inside-avoid bg-white border-2 border-gray-300 p-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
               <div className="text-6xl font-black text-black mb-4">01</div>
               <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Format</h3>
-              <p className="mb-4">
-                iOS → <span className="font-mono">.ipa</span><br/>
-                Android → <span className="font-mono">.apk</span><br/>
-                Docker → <span className="font-mono">.tar</span><br/>
-                Agents → <span className="font-bold">Nothing</span>
-              </p>
+              <div className="flex-1">
+                <p className="mb-4">
+                  iOS → <span className="font-mono">.ipa</span><br/>
+                  Android → <span className="font-mono">.apk</span><br/>
+                  Docker → <span className="font-mono">.tar</span><br/>
+                  Agents → <span className="font-bold">Nothing</span>
+                </p>
+              </div>
             </div>
 
-            <div className="mb-10 break-inside-avoid bg-white border-2 border-gray-300 p-8">
+            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
               <div className="text-6xl font-black text-black mb-4">02</div>
               <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Registry</h3>
-              <p>
-                Thousands of agents exist. On GitHub. On Discord. But no central place to discover, search, or install them.
-              </p>
+              <div className="flex-1">
+                <p>
+                  Thousands of agents exist. On GitHub. On Discord. But no central place to discover, search, or install them.
+                </p>
+              </div>
             </div>
 
-            <div className="mb-10 break-inside-avoid bg-white border-2 border-gray-300 p-8">
+            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
               <div className="text-6xl font-black text-black mb-4">03</div>
               <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Composability</h3>
-              <p>
-                Agents should build on agents. Like npm packages. Like microservices. But everything is a monolith.
-              </p>
+              <div className="flex-1">
+                <p>
+                  Agents should build on agents. Like npm packages. Like microservices. But everything is a monolith.
+                </p>
+              </div>
             </div>
           </div>
         </div>
