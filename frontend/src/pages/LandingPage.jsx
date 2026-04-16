@@ -31,33 +31,7 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* Hero Statement */}
-      <section className="py-20 px-6 bg-black text-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-[42px] font-['Playfair_Display'] font-bold leading-tight mb-12">
-            "There's one last thing the agent economy needs.
-            <br />
-            <span className="italic">The way to share them.</span>"
-          </p>
-          
-          <div className="flex justify-center gap-16 mb-12">
-            <div>
-              <div className="text-6xl font-black mb-2">$50B+</div>
-              <div className="text-sm text-gray-400">Market by 2028</div>
-            </div>
-            <div className="text-6xl text-gray-600">│</div>
-            <div>
-              <div className="text-6xl font-black mb-2">87%</div>
-              <div className="text-sm text-gray-400">Teams Building</div>
-            </div>
-            <div className="text-6xl text-gray-600">│</div>
-            <div>
-              <div className="text-6xl font-black mb-2">0</div>
-              <div className="text-sm text-gray-400">Standards Today</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Statement - REMOVED */}
 
       {/* The Innovation */}
       <section className="py-20 px-6 border-b border-gray-300">
@@ -94,14 +68,7 @@ export const LandingPage = () => {
                 </p>
               </div>
 
-              <div className="bg-gray-900 text-white p-10 mb-8 relative overflow-hidden">
-                <div className="absolute top-2 right-2">
-                  <pre className="text-[8px] text-gray-600 font-mono">
-{`    ╭─────╮
-    │ ⚡️   │
-    ╰─────╯`}
-                  </pre>
-                </div>
+              <div className="bg-black text-white p-10 mb-8 relative overflow-hidden">
                 <div className="font-mono text-sm mb-4">
                   <div className="text-gray-500 mb-2"># One-time setup</div>
                   <div className="text-xl font-bold mb-6">$ brew install agent</div>
@@ -227,9 +194,8 @@ export const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300 flex items-center justify-between">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
                 <h3 className="font-bold text-2xl text-black">Compose Agents</h3>
-                <span className="text-4xl">⚡</span>
               </div>
               <div className="p-8">
                 <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
@@ -244,9 +210,8 @@ export const LandingPage = () => {
             </div>
 
             <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300 flex items-center justify-between">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
                 <h3 className="font-bold text-2xl text-black">Find Tested Agents</h3>
-                <span className="text-4xl">🔍</span>
               </div>
               <div className="p-8">
                 <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
@@ -261,9 +226,8 @@ export const LandingPage = () => {
             </div>
 
             <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300 flex items-center justify-between">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
                 <h3 className="font-bold text-2xl text-black">Share Instantly</h3>
-                <span className="text-4xl">📦</span>
               </div>
               <div className="p-8">
                 <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
@@ -278,9 +242,8 @@ export const LandingPage = () => {
             </div>
 
             <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300 flex items-center justify-between">
+              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
                 <h3 className="font-bold text-2xl text-black">Build Together</h3>
-                <span className="text-4xl">🔧</span>
               </div>
               <div className="p-8">
                 <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
