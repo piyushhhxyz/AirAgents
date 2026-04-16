@@ -109,87 +109,90 @@ export const LandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-20">
             <h2 className="font-['Playfair_Display'] font-black text-[72px] leading-tight text-black mb-6">
-              Use Cases.
+              What You Can Do.
             </h2>
             <p className="text-gray-700 text-2xl">
-              Real agents. Real workflows. One command.
+              The possibilities with AgentDrop.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             {/* Use Case 1 */}
-            <div className="border-2 border-gray-200 overflow-hidden">
+            <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
               <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
-                <h3 className="text-2xl font-semibold text-black mb-2">Email Assistant</h3>
-                <p className="text-sm text-gray-500 uppercase tracking-wider">Personal Productivity</p>
+                <h3 className="text-2xl font-semibold text-black">Agents Can Call Agents</h3>
               </div>
               <div className="p-8">
                 <div className="bg-black p-6 font-mono text-white text-sm mb-6">
-                  .agent install email-assistant
+                  .agent install my-workflow<br/>
+                  <span className="text-gray-400"># Automatically uses email-parser.agent</span><br/>
+                  <span className="text-gray-400"># Automatically uses summarizer.agent</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Reads your inbox, flags urgent emails, drafts replies, auto-archives newsletters.
+                  Build complex workflows by composing simple agents. Your agent declares dependencies, the runtime fetches them automatically.
                 </p>
                 <p className="text-black font-semibold">
-                  Saves 2 hours daily. Runs locally.
+                  Just like npm packages.
                 </p>
               </div>
             </div>
 
             {/* Use Case 2 */}
-            <div className="border-2 border-gray-200 overflow-hidden">
+            <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
               <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
-                <h3 className="text-2xl font-semibold text-black mb-2">Meeting Scheduler</h3>
-                <p className="text-sm text-gray-500 uppercase tracking-wider">Team Coordination</p>
+                <h3 className="text-2xl font-semibold text-black">Find Tested Agents</h3>
               </div>
               <div className="p-8">
                 <div className="bg-black p-6 font-mono text-white text-sm mb-6">
-                  .agent install meeting-scheduler
+                  .agent search "email automation"<br/>
+                  <span className="text-gray-400"># Browse 1,200+ working agents</span><br/>
+                  <span className="text-gray-400"># See ratings, downloads, reviews</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Finds optimal times, coordinates calendars, sends invites, handles reschedules.
+                  Don't build from scratch. Browse the registry. See what's already working. Check ratings and download counts. Install instantly.
                 </p>
                 <p className="text-black font-semibold">
-                  No more email tennis.
+                  Stop reinventing the wheel.
                 </p>
               </div>
             </div>
 
             {/* Use Case 3 */}
-            <div className="border-2 border-gray-200 overflow-hidden">
+            <div className="border-2 border-gray-200 overflow-hidden hover:border-[#d97757] transition-all duration-300">
               <div className="bg-gray-50 p-8 border-b-2 border-gray-200">
-                <h3 className="text-2xl font-semibold text-black mb-2">Research Assistant</h3>
-                <p className="text-sm text-gray-500 uppercase tracking-wider">Knowledge Work</p>
+                <h3 className="text-2xl font-semibold text-black">Share Your Agents</h3>
               </div>
               <div className="p-8">
                 <div className="bg-black p-6 font-mono text-white text-sm mb-6">
-                  .agent install research-assistant
+                  .agent publish my-assistant.agent<br/>
+                  <span className="text-gray-400"># Uploads to registry</span><br/>
+                  <span className="text-gray-400"># Anyone can install it</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Searches web, summarizes papers, tracks citations, compiles reports.
+                  Built something useful? Package it as a .agent file. Publish to the registry. Or airdrop directly to friends. No deployment. No infrastructure.
                 </p>
                 <p className="text-black font-semibold">
-                  Your personal research team.
+                  Share in seconds.
                 </p>
               </div>
             </div>
 
-            {/* Use Case 4 - Composable */}
+            {/* Use Case 4 */}
             <div className="border-2 border-[#d97757] overflow-hidden">
               <div className="bg-[#d97757] p-8 border-b-2 border-[#d97757]">
-                <h3 className="text-2xl font-semibold text-white mb-2">News → Slack Pipeline</h3>
-                <p className="text-sm text-white uppercase tracking-wider">Composable Agents</p>
+                <h3 className="text-2xl font-semibold text-white">Build on Each Other</h3>
               </div>
               <div className="p-8">
                 <div className="bg-black p-6 font-mono text-white text-sm mb-6">
-                  .agent install news-pipeline<br/>
-                  <span className="text-gray-400"># Uses: news-curator + summarizer + slack-bot</span>
+                  .agent fork email-parser<br/>
+                  <span className="text-gray-400"># Extend existing agents</span><br/>
+                  <span className="text-gray-400"># Contribute improvements back</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Fetches news, summarizes articles, posts to Slack. Three agents, one workflow.
+                  Fork agents. Extend them. Contribute back. Build on top of what others created. The agent economy thrives on collaboration.
                 </p>
                 <p className="text-black font-semibold">
-                  Agents building on agents.
+                  Open source for AI workflows.
                 </p>
               </div>
             </div>
@@ -265,7 +268,6 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };
