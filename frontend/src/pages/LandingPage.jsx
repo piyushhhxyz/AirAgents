@@ -24,7 +24,7 @@ export const LandingPage = () => {
           <h1 className="font-['Playfair_Display'] font-black text-[120px] leading-[0.95] text-black mb-12">
             Agents are the new apps.
             <br />
-            <span className="text-[#d97757]">Sharing</span> them
+            <span className="text-gray-800">Sharing</span> them
             <br />
             shouldn't be hard.
           </h1>
@@ -41,7 +41,7 @@ export const LandingPage = () => {
             <div className="border-l-4 border-black pl-8">
               <Link 
                 to="/registry"
-                className="inline-block px-10 py-5 bg-[#d97757] text-white text-lg font-semibold hover:bg-[#c86646] transition-all"
+                className="inline-block px-10 py-5 bg-black text-white text-lg font-semibold hover:bg-gray-800 transition-all"
               >
                 Browse Agent Registry →
               </Link>
@@ -60,7 +60,7 @@ export const LandingPage = () => {
               <br />
               Trapped Inside
               <br />
-              <span className="italic text-[#d97757]">Platforms.</span>
+              <span className="italic text-gray-700">Platforms.</span>
             </h2>
           </div>
 
@@ -96,7 +96,7 @@ export const LandingPage = () => {
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Solution</div>
           
           <h2 className="font-['Playfair_Display'] font-black text-[64px] leading-[0.95] text-black mb-12">
-            Introducing <span className="font-mono text-[#d97757]">.agent</span>
+            Introducing <span className="font-mono text-gray-900">.agent</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -126,7 +126,7 @@ export const LandingPage = () => {
                 <div className="pl-0">└── metadata.yaml</div>
               </div>
               <div className="mt-6 pt-4 border-t border-gray-300">
-                <div className="text-[#d97757] font-bold text-lg mb-1">.agent</div>
+                <div className="text-black font-bold text-lg mb-1">.agent</div>
                 <div className="text-xs text-gray-500">packed, signed, ready to share</div>
               </div>
             </div>
@@ -144,37 +144,37 @@ export const LandingPage = () => {
             <div className="bg-black text-white p-6 font-mono text-xs">
               <div className="text-gray-400 mb-1"># bundle</div>
               <div className="mb-3">$ agentbox pack ./my-tax-agent</div>
-              <div className="text-[#d97757] mb-4 text-xs">✓ packed → my-tax-agent.agent (2.1 MB)</div>
+              <div className="text-gray-400 mb-4 text-xs">✓ packed → my-tax-agent.agent (2.1 MB)</div>
               
               <div className="text-gray-400 mb-1 mt-4"># publish</div>
               <div className="mb-3">$ agentbox publish --name @piyush/tax-agent</div>
-              <div className="text-[#d97757] mb-4 text-xs">✓ live at the-nest.sh/@piyush/tax-agent</div>
+              <div className="text-gray-400 mb-4 text-xs">✓ live at the-nest.sh/@piyush/tax-agent</div>
               
               <div className="text-gray-400 mb-1 mt-4"># install & run</div>
               <div className="mb-1">$ agentbox install @piyush/tax-agent</div>
-              <div className="text-[#d97757] mb-3 text-xs">✓ installed in 2.8s</div>
+              <div className="text-gray-400 mb-3 text-xs">✓ installed in 2.8s</div>
               <div>$ agentbox run tax-agent -m "What can I deduct?"</div>
             </div>
 
             <div className="grid grid-cols-1 gap-3">
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-[#d97757] mb-1">pack</h3>
+                <h3 className="text-lg font-bold text-black mb-1">pack</h3>
                 <p className="text-xs text-gray-700">Bundle into signed .agent file</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-[#d97757] mb-1">publish</h3>
+                <h3 className="text-lg font-bold text-black mb-1">publish</h3>
                 <p className="text-xs text-gray-700">Push to The Nest under @you/name</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-[#d97757] mb-1">install</h3>
+                <h3 className="text-lg font-bold text-black mb-1">install</h3>
                 <p className="text-xs text-gray-700">Install from registry or .agent file</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-[#d97757] mb-1">run</h3>
+                <h3 className="text-lg font-bold text-black mb-1">run</h3>
                 <p className="text-xs text-gray-700">Execute agent with a message</p>
               </div>
               <div className="border border-gray-300 p-4">
-                <h3 className="text-lg font-bold text-[#d97757] mb-1">unpack</h3>
+                <h3 className="text-lg font-bold text-black mb-1">unpack</h3>
                 <p className="text-xs text-gray-700">Inspect contents of any .agent file</p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export const LandingPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">Agent Swarms</div>
           <h2 className="text-5xl font-['Playfair_Display'] font-black text-black leading-tight mb-2">
-            Agents that call <span className="italic text-[#d97757]">other agents.</span>
+            Agents that call <span className="italic text-gray-700">other agents.</span>
           </h2>
           <p className="text-lg text-gray-700 mb-8">
             Your orchestrator spawns sub-agents on demand — like npm install, at runtime.
@@ -205,34 +205,34 @@ export const LandingPage = () => {
                 <div className="text-gray-400 mb-2"># Claude spawns sub-agents</div>
                 <div className="mb-3">use agentbox</div>
                 <div className="mb-4">task: research + write + post</div>
-                <div className="text-[#d97757] text-[9px] mb-1">→ agentbox run @sara/research \</div>
-                <div className="text-[#d97757] text-[9px] mb-3 ml-4">-m "STOPIC" | pipe to \</div>
-                <div className="text-[#d97757] text-[9px] mb-1">agentbox run @alex/writer \</div>
-                <div className="text-[#d97757] text-[9px] mb-3 ml-4">--style blog | pipe to \</div>
-                <div className="text-[#d97757] text-[9px]">agentbox run @piyush/linkedin-poster</div>
+                <div className="text-gray-400 text-[9px] mb-1">→ agentbox run @sara/research \</div>
+                <div className="text-gray-400 text-[9px] mb-3 ml-4">-m "STOPIC" | pipe to \</div>
+                <div className="text-gray-400 text-[9px] mb-1">agentbox run @alex/writer \</div>
+                <div className="text-gray-400 text-[9px] mb-3 ml-4">--style blog | pipe to \</div>
+                <div className="text-gray-400 text-[9px]">agentbox run @piyush/linkedin-poster</div>
               </div>
             </div>
 
             <div className="md:col-span-3">
               <div className="border-2 border-gray-300 p-6 bg-white h-full">
                 <div className="text-center mb-4">
-                  <div className="inline-block border-2 border-[#d97757] bg-[#d97757]/10 px-6 py-3 mb-4 hover:bg-[#d97757]/20 transition-all cursor-pointer">
+                  <div className="inline-block border-2 border-black bg-gray-100 px-6 py-3 mb-4 hover:bg-gray-200 transition-all cursor-pointer">
                     <div className="font-bold">orchestrator</div>
                     <div className="text-xs text-gray-600">your agent</div>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3 mb-4">
-                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
-                    <div className="text-[#d97757] font-mono text-xs mb-1">@sara/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
+                    <div className="text-black font-mono text-xs mb-1">@sara/</div>
                     <div className="text-[10px]">research</div>
                   </div>
-                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
-                    <div className="text-[#d97757] font-mono text-xs mb-1">@alex/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
+                    <div className="text-black font-mono text-xs mb-1">@alex/</div>
                     <div className="text-[10px]">writer</div>
                   </div>
-                  <div className="border border-gray-300 p-3 text-center hover:border-[#d97757] transition-all cursor-pointer">
-                    <div className="text-[#d97757] font-mono text-xs mb-1">@piyush/</div>
+                  <div className="border border-gray-300 p-3 text-center hover:border-black transition-all cursor-pointer">
+                    <div className="text-black font-mono text-xs mb-1">@piyush/</div>
                     <div className="text-[10px]">poster</div>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export const LandingPage = () => {
                   <div className="h-8 border-l border-dashed border-gray-300 mx-auto"></div>
                 </div>
 
-                <div className="border-2 border-[#d97757] bg-[#d97757]/10 p-4 text-center">
+                <div className="border-2 border-black bg-gray-100 p-4 text-center">
                   <div className="font-bold text-sm mb-1">published LinkedIn post</div>
                   <div className="text-[10px] text-gray-600">zero human intervention</div>
                 </div>
@@ -262,7 +262,7 @@ export const LandingPage = () => {
           <div className="mb-12">
             <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Platform</div>
             <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight mb-6">
-              Introducing <span className="italic text-[#d97757]">The Nest</span> —
+              Introducing <span className="italic text-gray-800">The Nest</span> —
             </h2>
             <p className="text-2xl text-gray-700 italic">
               the agent registry. Think npm, but for AI agents.
@@ -271,14 +271,14 @@ export const LandingPage = () => {
 
           <div className="bg-gray-50 border-2 border-gray-300 p-8 mb-6">
             <div className="flex justify-between items-center mb-4 pb-4 border-b-2 border-gray-300">
-              <div className="font-mono text-[#d97757] text-xl">the-nest.sh</div>
+              <div className="font-mono text-black text-xl">the-nest.sh</div>
               <div className="text-xs text-gray-500">12,847 agents · 2.1M installs</div>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center justify-between border-l-4 border-[#d97757] pl-6 py-4 bg-white">
+              <div className="flex items-center justify-between border-l-4 border-black pl-6 py-4 bg-white">
                 <div>
-                  <div className="font-mono text-[#d97757] font-bold mb-1">@piyush/tax-agent</div>
+                  <div className="font-mono text-black font-bold mb-1">@piyush/tax-agent</div>
                   <div className="text-sm text-gray-600">AI tax advisor · bundled knowledge · GPT-4</div>
                 </div>
                 <div className="text-right">
@@ -310,7 +310,7 @@ export const LandingPage = () => {
               </div>
 
               <div className="text-center py-4">
-                <Link to="/registry" className="text-sm text-gray-500 hover:text-[#d97757]">
+                <Link to="/registry" className="text-sm text-gray-500 hover:text-black">
                   more →
                 </Link>
               </div>
@@ -338,7 +338,7 @@ export const LandingPage = () => {
           </p>
           <Link 
             to="/registry"
-            className="inline-block px-12 py-6 bg-[#d97757] text-white text-xl font-semibold hover:bg-[#c86646] transition-all"
+            className="inline-block px-12 py-6 bg-white text-black text-xl font-semibold hover:bg-gray-200 transition-all"
           >
             Explore the Registry →
           </Link>
