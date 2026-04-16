@@ -1,350 +1,273 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Header } from '../components/Header';
 
 export const LandingPage = () => {
+  const [hoveredStat, setHoveredStat] = useState(null);
+
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* Hero Masthead */}
-      <section className="pt-32 pb-16 px-6 border-b-4 border-black">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="mb-8">
-            <pre className="text-[10px] text-gray-400 leading-tight font-mono inline-block">
-{`    ╔═══════════════════════════════════════════════════════════════╗
-    ║                        A G E N T D R O P                      ║
-    ╚═══════════════════════════════════════════════════════════════╝`}
-            </pre>
+      {/* Newspaper Header */}
+      <div className="border-b-4 border-black py-6 px-8">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="text-xs uppercase tracking-widest text-gray-500">
+            The Future of Agents
           </div>
-          <h1 className="font-['Playfair_Display'] font-black text-[96px] leading-none text-black mb-6">
-            Airdrop Your
-            <br />
-            <span className="italic">AI Agents.</span>
-          </h1>
-          <div className="flex items-center justify-center gap-4 text-2xl text-gray-500 mb-8">
-            <span>━━━━━</span>
-            <span className="text-sm uppercase tracking-widest">The Distribution Layer</span>
-            <span>━━━━━</span>
+          <div className="text-xs uppercase tracking-widest text-gray-500">
+            April 2026
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* The Innovation */}
-      <section className="py-20 px-6 border-b border-gray-300">
+      {/* Hero Editorial */}
+      <section className="py-20 px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-12 gap-12">
-            <div className="md:col-span-8">
-              <div className="mb-12">
-                <div className="inline-block mb-4">
-                  <pre className="text-[8px] text-gray-400 font-mono leading-tight">
-{`    ┌─────────────────────────────┐
-    │   THE  .AGENT  FORMAT       │
-    └─────────────────────────────┘`}
-                  </pre>
-                </div>
-                <h2 className="font-['Playfair_Display'] font-black text-[64px] leading-[1.1] text-black mb-8">
-                  Install Once.
-                  <br />
-                  Share Forever.
-                </h2>
-              </div>
-              
-              <div className="columns-2 gap-12 text-lg text-gray-700 leading-relaxed mb-12">
-                <p className="mb-6">
-                  Every technology has its distribution format. iOS has .ipa files. Android has .apk. Docker has .tar images.
-                </p>
-                <p className="mb-6">
-                  <span className="font-bold text-black text-2xl">But AI agents?</span> Nothing. Just scattered files, broken repos, and hours of setup.
-                </p>
-                <p className="mb-6">
-                  We created <span className="font-mono bg-gray-100 px-2 py-1 text-black font-semibold">.agent</span> — a standard format that packages workflows, prompts, skills, and dependencies into one shareable file.
-                </p>
-                <p className="mb-6 text-2xl font-bold text-black">
-                  Airdrop it. Install it. Use it.
-                </p>
-              </div>
+          <h1 className="font-['Playfair_Display'] font-black text-[120px] leading-[0.95] text-black mb-12">
+            Agents are the new apps.
+            <br />
+            <span className="text-gray-400">Sharing them</span>
+            <br />
+            shouldn't be hard.
+          </h1>
 
-              <div className="bg-black text-white p-10 mb-8">
-                <div className="font-mono text-sm mb-4">
-                  <div className="text-gray-500 mb-2"># Install brewagent (one-time)</div>
-                  <div className="text-xl font-bold mb-6">$ npm install -g brewagent</div>
-                  <div className="text-gray-500 mb-2"># Pack and share any agent</div>
-                  <div className="text-xl font-bold mb-4">$ brewagent pack my-agent</div>
-                  <div className="text-gray-500 mb-2"># Install from .agent file</div>
-                  <div className="text-xl font-bold">$ brewagent install email-assistant.agent</div>
-                </div>
-                <div className="border-t border-gray-700 mt-6 pt-4">
-                  <div className="text-sm text-gray-400">✓ No config files. No setup scripts. No cloud. Just works.</div>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <Link to="/registry" className="px-8 py-4 bg-[#d97757] text-white text-base font-semibold hover:bg-[#c86646] transition-all">
-                  Browse Registry →
-                </Link>
-                <a href="https://www.npmjs.com/package/brewagent" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-black text-black text-base font-semibold hover:bg-black hover:text-white transition-all">
-                  View on npm
-                </a>
-              </div>
+          <div className="grid md:grid-cols-2 gap-16 mb-16">
+            <div>
+              <p className="text-2xl text-gray-700 leading-relaxed mb-8">
+                Apps have the App Store. Code has Git. Websites have URLs.
+              </p>
+              <p className="text-3xl text-black font-bold leading-relaxed">
+                But how do you share a personal AI agent?
+              </p>
             </div>
-
-            <div className="md:col-span-4">
-              <div className="border-l-4 border-black pl-8 sticky top-32">
-                <div className="mb-8">
-                  <pre className="text-[10px] text-gray-400 font-mono leading-tight mb-4">
-{`    ┏━━━━━━━━━━━━━━━━━━━━━┓
-    ┃  WHAT'S INSIDE      ┃
-    ┗━━━━━━━━━━━━━━━━━━━━━┛`}
-                  </pre>
-                  <ul className="space-y-3 text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#d97757] font-bold">▸</span>
-                      <span>Workflow definitions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#d97757] font-bold">▸</span>
-                      <span>System prompts & templates</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#d97757] font-bold">▸</span>
-                      <span>Skill declarations</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#d97757] font-bold">▸</span>
-                      <span>Dependency graph</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#d97757] font-bold">▸</span>
-                      <span>Runtime configuration</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-gray-50 p-6 border-2 border-gray-200 mb-6">
-                  <div className="text-xs uppercase tracking-widest text-gray-500 mb-3">Package</div>
-                  <div className="text-2xl font-black text-black mb-2">brewagent</div>
-                  <div className="text-sm text-gray-600 mb-3">v0.1.0 on npm</div>
-                  <a href="https://www.npmjs.com/package/brewagent" target="_blank" rel="noopener noreferrer" className="text-xs text-[#d97757] hover:underline">
-                    npmjs.com/package/brewagent →
-                  </a>
-                </div>
-              </div>
+            <div className="border-l-4 border-black pl-8">
+              <Link 
+                to="/registry"
+                className="inline-block px-10 py-5 bg-black text-white text-lg font-semibold hover:bg-[#d97757] transition-all mb-8"
+              >
+                Browse Agent Registry →
+              </Link>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Over 1,200 agents ready to install. One command. Zero setup.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Problem → Solution */}
-      <section className="py-20 px-6 bg-gray-50">
+      {/* ASCII Art Section */}
+      <section className="py-16 px-8 bg-gray-50 border-y-2 border-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <pre className="text-[8px] font-mono text-gray-600 leading-tight mb-8">
+{`    ┌────────────────────────────────────────────────────────────┐
+    │                                                            │
+    │     [Agent A]  ──┐                                         │
+    │                  │                                         │
+    │     [Agent B]  ──┼───▶  .agent file  ──▶  [Airdrop]       │
+    │                  │                                         │
+    │     [Agent C]  ──┘                                         │
+    │                                                            │
+    │     One format. Universal sharing.                         │
+    │                                                            │
+    └────────────────────────────────────────────────────────────┘`}
+              </pre>
+              <div className="bg-black text-white p-6 font-mono text-xs">
+                <div className="text-gray-400 mb-2"># Pack any agent</div>
+                <div className="text-lg">$ brewagent pack my-agent</div>
+                <div className="text-gray-400 mt-4 mb-2"># Share the .agent file</div>
+                <div className="text-lg">$ my-agent-1.0.0.agent</div>
+              </div>
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Innovation</div>
+              <h2 className="text-5xl font-['Playfair_Display'] font-black text-black mb-6 leading-tight">
+                A single file that contains everything
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                The .agent format packages workflows, prompts, skills, and dependencies into one portable file. Like .ipa for iOS. Like .apk for Android.
+              </p>
+              <p className="text-xl text-black font-semibold">
+                Install once. Share forever.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Stats */}
+      <section className="py-20 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <pre className="text-[10px] text-gray-400 font-mono leading-tight mb-6 inline-block">
-{`    ════════════════════════════════════════════════════════
-    ║                    THE  PROBLEM                      ║
-    ════════════════════════════════════════════════════════`}
-            </pre>
-            <h2 className="font-['Playfair_Display'] font-black text-[56px] leading-tight text-black">
-              Three Missing Pieces
+            <h2 className="text-5xl font-['Playfair_Display'] font-black text-black mb-4">
+              The Market is Exploding
             </h2>
+            <p className="text-gray-600">Three numbers that tell the story</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
-              <div className="text-6xl font-black text-black mb-4">01</div>
-              <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Format</h3>
-              <div className="flex-1">
-                <p className="mb-4">
-                  iOS → <span className="font-mono">.ipa</span><br/>
-                  Android → <span className="font-mono">.apk</span><br/>
-                  Docker → <span className="font-mono">.tar</span><br/>
-                  Agents → <span className="font-bold">Nothing</span>
+            <div 
+              className="border-4 border-gray-300 p-12 text-center hover:border-[#d97757] transition-all cursor-pointer"
+              onMouseEnter={() => setHoveredStat('market')}
+              onMouseLeave={() => setHoveredStat(null)}
+            >
+              <div className="text-8xl font-black text-black mb-4">$50B+</div>
+              <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">By 2028</div>
+              {hoveredStat === 'market' && (
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Gartner predicts every knowledge worker will use 3-5 personal agents by 2027. That's billions of agents needing distribution.
                 </p>
-              </div>
+              )}
             </div>
 
-            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
-              <div className="text-6xl font-black text-black mb-4">02</div>
-              <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Registry</h3>
-              <div className="flex-1">
-                <p>
-                  Thousands of agents exist. On GitHub. On Discord. But no central place to discover, search, or install them.
+            <div 
+              className="border-4 border-gray-300 p-12 text-center hover:border-[#d97757] transition-all cursor-pointer"
+              onMouseEnter={() => setHoveredStat('teams')}
+              onMouseLeave={() => setHoveredStat(null)}
+            >
+              <div className="text-8xl font-black text-black mb-4">87%</div>
+              <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">Teams Building</div>
+              {hoveredStat === 'teams' && (
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  OpenAI, Anthropic, Google—everyone is shipping agent frameworks. But nobody solved distribution until now.
                 </p>
-              </div>
+              )}
             </div>
 
-            <div className="bg-white border-2 border-gray-300 p-8 flex flex-col">
-              <div className="text-6xl font-black text-black mb-4">03</div>
-              <h3 className="font-bold text-xl text-black mb-4 border-b-2 border-black pb-2">No Composability</h3>
-              <div className="flex-1">
-                <p>
-                  Agents should build on agents. Like npm packages. Like microservices. But everything is a monolith.
+            <div 
+              className="border-4 border-gray-300 p-12 text-center hover:border-[#d97757] transition-all cursor-pointer"
+              onMouseEnter={() => setHoveredStat('standards')}
+              onMouseLeave={() => setHoveredStat(null)}
+            >
+              <div className="text-8xl font-black text-black mb-4">0</div>
+              <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">Standards Today</div>
+              {hoveredStat === 'standards' && (
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  We're creating the category. The .agent format becomes THE standard. First mover advantage.
                 </p>
-              </div>
+              )}
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You Can Do */}
-      <section className="py-20 px-6 border-t-4 border-black">
+      {/* The Problem - Newspaper Columns */}
+      <section className="py-20 px-8 bg-gray-50 border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <pre className="text-[10px] text-gray-400 font-mono leading-tight mb-6 inline-block">
-{`    ┌───────────────────────────────────────────────────────────┐
-    │                   WHAT  YOU  CAN  DO                      │
-    └───────────────────────────────────────────────────────────┘`}
-            </pre>
-            <h2 className="font-['Playfair_Display'] font-black text-[56px] leading-tight text-black">
-              Four Superpowers
+          <div className="mb-16">
+            <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Problem</div>
+            <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight">
+              Agents Are
+              <br />
+              Trapped Inside
+              <br />
+              <span className="italic">Platforms.</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
-                <h3 className="font-bold text-2xl text-black">Compose Agents</h3>
+          <div className="columns-3 gap-12 text-base text-gray-700 leading-relaxed">
+            <p className="mb-6">
+              You've built a genuinely useful AI agent. It saves you hours every day. Your colleague sees it and wants it.
+            </p>
+            <p className="mb-6 font-bold text-black text-xl">
+              Now what?
+            </p>
+            <p className="mb-6">
+              If you built it in ChatGPT, it's locked in the GPT Store. Your friend needs a ChatGPT account. If you built it in Claude, it lives in your Projects—untransferable. If you built it yourself, they need to clone your repo, configure environments, get API keys, and pray nothing breaks.
+            </p>
+            <p className="mb-6">
+              <span className="font-mono bg-gray-200 px-2 py-1">.ipa</span> files let you share iOS apps. <span className="font-mono bg-gray-200 px-2 py-1">.apk</span> files let you share Android apps. Agents had nothing. Until now.
+            </p>
+            <p className="mb-6 text-black font-semibold text-lg">
+              The .agent format is the missing piece.
+            </p>
+            <p className="mb-6">
+              One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow. They open the file and the agent runs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works - Interactive */}
+      <section className="py-20 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-['Playfair_Display'] font-black text-black mb-6">
+              Three Steps.
+              <br />
+              That's It.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-16">
+            <div className="border-l-4 border-black pl-8">
+              <div className="text-7xl font-black text-black mb-4">01</div>
+              <h3 className="text-2xl font-bold text-black mb-4">Install brewagent</h3>
+              <div className="bg-gray-100 p-4 font-mono text-sm text-black mb-4">
+                $ npm install -g brewagent
               </div>
-              <div className="p-8">
-                <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
-                  $ brewagent install my-workflow<br/>
-                  <span className="text-gray-600">↳ Auto-fetches: email-parser.agent</span><br/>
-                  <span className="text-gray-600">↳ Auto-fetches: summarizer.agent</span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Complex workflows from simple components. Dependencies resolve automatically.
-                </p>
-              </div>
+              <p className="text-sm text-gray-700">
+                One-time setup. Works everywhere.
+              </p>
             </div>
 
-            <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
-                <h3 className="font-bold text-2xl text-black">Find Tested Agents</h3>
+            <div className="border-l-4 border-black pl-8">
+              <div className="text-7xl font-black text-black mb-4">02</div>
+              <h3 className="text-2xl font-bold text-black mb-4">Pack your agent</h3>
+              <div className="bg-gray-100 p-4 font-mono text-sm text-black mb-4">
+                $ brewagent pack my-agent
               </div>
-              <div className="p-8">
-                <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
-                  $ brewagent list<br/>
-                  <span className="text-gray-600">→ Browse registry</span><br/>
-                  <span className="text-gray-600">→ View ratings & downloads</span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Stop rebuilding. Search, evaluate, install. The registry has what you need.
-                </p>
-              </div>
+              <p className="text-sm text-gray-700">
+                Creates a portable .agent file.
+              </p>
             </div>
 
-            <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
-                <h3 className="font-bold text-2xl text-black">Share Instantly</h3>
+            <div className="border-l-4 border-black pl-8">
+              <div className="text-7xl font-black text-black mb-4">03</div>
+              <h3 className="text-2xl font-bold text-black mb-4">Share anywhere</h3>
+              <div className="bg-gray-100 p-4 font-mono text-sm text-black mb-4">
+                $ my-agent-1.0.0.agent
               </div>
-              <div className="p-8">
-                <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
-                  $ brewagent pack my-assistant<br/>
-                  <span className="text-gray-600">✓ Creates .agent file</span><br/>
-                  <span className="text-gray-600">✓ Ready to airdrop</span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Package once. Share everywhere. Via airdrop, email, Slack. No servers needed.
-                </p>
-              </div>
-            </div>
-
-            <div className="border-2 border-gray-300 hover:border-[#d97757] transition-all">
-              <div className="bg-gray-50 p-6 border-b-2 border-gray-300">
-                <h3 className="font-bold text-2xl text-black">Build Together</h3>
-              </div>
-              <div className="p-8">
-                <div className="bg-gray-100 p-4 font-mono text-xs text-black mb-4">
-                  $ brewagent init new-agent<br/>
-                  <span className="text-gray-600">→ Scaffold from templates</span><br/>
-                  <span className="text-gray-600">→ Extend & contribute</span>
-                </div>
-                <p className="text-sm text-gray-700">
-                  Open source for AI. Start from templates, extend functionality, share improvements.
-                </p>
-              </div>
+              <p className="text-sm text-gray-700">
+                Airdrop, email, Slack. Just works.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Vision - IMPROVED */}
-      <section className="py-32 px-6 bg-black text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <pre className="text-[10px] text-gray-600 font-mono leading-tight mb-8">
-{`    ╔══════════════════════════════╗
-    ║      T H E   V I S I O N     ║
-    ╚══════════════════════════════╝`}
-              </pre>
-
-              <h2 className="font-['Playfair_Display'] font-black text-[72px] leading-[1.1] mb-12">
-                Agents
-                <br />
-                <span className="italic">Should Travel.</span>
-              </h2>
-
-              <div className="space-y-6 text-lg text-gray-300 leading-relaxed mb-12">
-                <p>
-                  Apps needed the App Store.
-                  <br />
-                  Code needed GitHub.
-                  <br />
-                  Packages needed npm.
-                </p>
-                <p className="text-white text-2xl font-bold">
-                  Agents need brewagent.
-                </p>
-              </div>
-
-              <Link 
-                to="/registry"
-                className="inline-block px-10 py-5 bg-[#d97757] text-white text-lg font-semibold hover:bg-[#c86646] transition-all"
-              >
-                Explore Registry →
-              </Link>
-            </div>
-
-            <div className="space-y-6">
-              <div className="border-2 border-gray-700 p-8">
-                <div className="text-5xl font-black text-white mb-3">$50B+</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Market by 2028</div>
-                <p className="text-sm text-gray-500 mt-3">
-                  Gartner predicts 3-5 agents per knowledge worker by 2027
-                </p>
-              </div>
-
-              <div className="border-2 border-gray-700 p-8">
-                <div className="text-5xl font-black text-white mb-3">87%</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Teams Building Agents</div>
-                <p className="text-sm text-gray-500 mt-3">
-                  OpenAI, Anthropic, Google all shipping frameworks
-                </p>
-              </div>
-
-              <div className="border-2 border-gray-700 p-8">
-                <div className="text-5xl font-black text-white mb-3">First</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Standard Format</div>
-                <p className="text-sm text-gray-500 mt-3">
-                  The .agent format becomes THE way to share AI agents
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t-4 border-black bg-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <pre className="text-[8px] text-gray-400 font-mono leading-tight mb-4 inline-block">
-{`    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    AgentDrop  —  Built for the agent economy  —  2025
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`}
+      {/* Pull Quote */}
+      <section className="py-32 px-8 bg-black text-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <pre className="text-[10px] font-mono text-gray-600 mb-12 inline-block">
+{`    ╔════════════════════════════════════════════════════════╗
+    ║                                                        ║
+    ║         "The App Store for the Agent Era"              ║
+    ║                                                        ║
+    ╚════════════════════════════════════════════════════════╝`}
           </pre>
+          <p className="text-5xl font-['Playfair_Display'] font-bold leading-tight mb-12">
+            Apps needed the App Store.
+            <br />
+            Code needed GitHub.
+            <br />
+            <span className="italic">Agents need brewagent.</span>
+          </p>
+          <Link 
+            to="/registry"
+            className="inline-block px-12 py-6 bg-[#d97757] text-white text-xl font-semibold hover:bg-[#c86646] transition-all"
+          >
+            Explore the Registry →
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer Attribution */}
+      <footer className="py-8 px-8 border-t-2 border-black">
+        <div className="max-w-7xl mx-auto flex justify-between items-center text-xs text-gray-500">
+          <div>AgentDrop — Built for the agent economy</div>
+          <div>2025</div>
         </div>
       </footer>
-
     </div>
   );
 };
