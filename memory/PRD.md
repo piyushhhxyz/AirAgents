@@ -1,39 +1,46 @@
 # AgentDrop - Product Requirements Document
 
-## Original Problem Statement
-Apps have app stores, code has GitHub, but agents have no distribution layer. Make sharing AI agents as easy as airdropping files - like npm for personal AI.
+## The Innovation
+Introducing the **.agent file format** - a standard way to package and share AI agents.
+- Like .ipa for iOS apps
+- Like .apk for Android  
+- Like .tar for Docker images
+- But for AI agents
 
-## Core Concept
-- **Airdrop agents** with a single command
-- **npm-like composability** - agents can build on other agents  
-- **Discovery registry** - browse, search, install
-- **No setup hell** - one command installs everything
+## Core Problem
+Agents have no distribution medium. You can't "send" an agent. You have to:
+- Wrap it in an app (overhead)
+- Deploy to cloud (unnecessary for local agents)
+- Share GitHub repos (setup hell)
+- No discovery, no composability, no standard format
 
-## Design (FINAL - Approved)
-- **Typography**: Playfair Display (900) for headlines, Inter for body
-- **Color**: Monochrome with #d97757 accent for CTAs
-- **Layout**: Uniform 3-column grid, clean cards
-- **Hover**: Border transitions (gray → coral)
-- **Content**: Real problem, command examples, composability
+## The Solution
+1. **brew install agent** - Install CLI once
+2. Package agents into **.agent files** (workflow + prompts + skills + tools)
+3. **Airdrop** .agent files or upload to registry  
+4. **.agent install file.agent** - Receiver installs & runs locally
+5. **Composability** - Agents declare dependencies, runtime fetches them
+
+## Market Opportunity
+- **$50B+** agent market by 2028
+- **87%** of AI teams building agents (OpenAI, Anthropic, Google)
+- **0** standardized formats exist today - we're creating the category
+- First mover advantage - .agent becomes THE standard
 
 ## Completed (Dec 2025)
-✅ Landing page with airdrop concept
-✅ Real problem: ZIP files, GitHub repos, 30-min calls
-✅ Solution: Command-based installation (.agent install)
-✅ npm-like composability examples
-✅ Uniform agent card grid with color accents
-✅ "What it does" section in cards (less text)
-✅ Copy to clipboard with coral CTA
-✅ Search and category filters
-
-## Content Highlights
-- Hero: "Airdrop Your AI Agents"
-- Problem cards: No send button, discovery, composability, setup hell
-- Solution: Shows .agent install commands
-- Composing example: news-curator → summarizer → slack-bot
+✅ Landing page explaining .agent format innovation
+✅ Medium problem (no standard format for agents)
+✅ Forced cloud deployment problem
+✅ brew install agent workflow
+✅ Composability examples
+✅ Market metrics and positioning
+✅ Beautiful Playfair + Inter typography
+✅ Coral accent (#d97757) for CTAs
+✅ Light grey code backgrounds
+✅ Uniform registry cards
 
 ## Next Steps
-- Backend development (MongoDB + FastAPI)
-- Real agent data instead of mocks
-- User authentication for creators
-- Agent upload functionality
+- Final design approval
+- Backend (MongoDB + FastAPI)
+- Real .agent file handling
+- CLI tool development

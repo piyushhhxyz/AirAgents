@@ -30,7 +30,7 @@ export const Header = () => {
             </Link>
             <Link 
               to="/registry"
-              className="px-5 py-2 bg-black text-white text-sm font-normal hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 bg-[#d97757] text-white text-sm font-normal hover:bg-[#c86646] transition-colors"
             >
               Browse
             </Link>
