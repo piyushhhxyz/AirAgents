@@ -8,12 +8,9 @@ export const LandingPage = () => {
     <div className="min-h-screen bg-white">
       {/* Newspaper Header */}
       <div className="border-b-4 border-black py-6 px-8">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-widest text-gray-500">
-            Agents on AIR
-          </div>
-          <div className="text-xs uppercase tracking-widest text-gray-500">
-            the-nest.sh
+            AirAgents
           </div>
         </div>
       </div>
@@ -90,25 +87,54 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* Solution - Directory Tree Style */}
+      {/* The Enemy */}
       <section className="py-20 px-8 bg-white border-t-2 border-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Enemy</div>
+          <h2 className="text-5xl font-['Playfair_Display'] font-black text-black leading-tight mb-12">
+            Think about this.
+          </h2>
+
+          <div className="space-y-6 text-2xl text-gray-700 leading-relaxed max-w-4xl">
+            <p>"Websites? We share a URL."</p>
+            <p>"Apps? <span className="font-mono bg-gray-200 px-2 py-1">.apk</span>. <span className="font-mono bg-gray-200 px-2 py-1">.exe</span>. App Store."</p>
+            <p>"Libraries? <span className="font-mono bg-gray-200 px-2 py-1">npm install</span>. <span className="font-mono bg-gray-200 px-2 py-1">brew install</span>. <span className="font-mono bg-gray-200 px-2 py-1">pip install</span>."</p>
+            <p className="text-black font-bold text-3xl">"Every kind of software humanity built — has a way to travel."</p>
+            <p className="text-[#555555] font-bold text-3xl italic">"Agents? Nothing."</p>
+            <p className="text-xl">"The only way to share an agent today is to wrap it in a website or an app."</p>
+            <p className="text-black font-bold text-2xl">"That's broken and sucks."</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution - Directory Tree Style */}
+      <section className="py-20 px-8 bg-gray-50 border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
           <div className="text-xs uppercase tracking-widest text-gray-400 mb-6">The Solution</div>
           
           <h2 className="font-['Playfair_Display'] font-black text-[64px] leading-[0.95] text-black mb-12">
-            Introducing <span className="font-mono text-[#555555]">.agent</span>
+            Introducing <span className="text-[#555555]">AIR AGENTS</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
             <div>
               <p className="text-2xl text-gray-700 leading-relaxed mb-6">
                 The .agent format is the missing piece.
               </p>
+              <p className="text-xl text-[#555555] font-bold italic mb-6">
+                Agents so light — you can literally airdrop them.
+              </p>
               <p className="text-lg text-gray-700 mb-6">
                 One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow.
               </p>
-              <p className="text-2xl text-black font-bold italic">
+              <p className="text-2xl text-black font-bold italic mb-8">
                 They open the file and the agent runs.
+              </p>
+              <p className="text-lg text-gray-700 mb-4">
+                "Framework-agnostic. LangChain, CrewAI, AutoGen, raw Python — doesn't matter."
+              </p>
+              <p className="text-2xl text-black font-bold">
+                "If it's an agent — it flies."
               </p>
             </div>
 
@@ -130,6 +156,44 @@ export const LandingPage = () => {
                 <div className="text-xs text-gray-500">packed, signed, ready to share</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Bigger Idea */}
+      <section className="py-20 px-8 bg-black text-white border-t-2 border-gray-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs uppercase tracking-widest text-gray-500 mb-4">The Bigger Idea</div>
+          <h2 className="text-5xl font-['Playfair_Display'] font-black leading-tight mb-12">
+            If agents have a standard format…
+            <br />
+            <span className="text-gray-400 italic">Anyone can install and run any agent</span>
+            <br />
+            which means…
+          </h2>
+
+          <div className="space-y-8 text-xl text-gray-300 leading-relaxed max-w-4xl mb-12">
+            <p className="text-3xl text-white font-bold italic">
+              "…agents can install other agents."
+            </p>
+            <p className="text-2xl text-white">
+              We built <span className="text-[#555555] font-bold">AgentHub</span>. A registry. Like npm — but for agents.
+            </p>
+            <p className="text-xl">
+              "My coding agent doesn't need to be a mediocre generalist anymore."
+            </p>
+            <p className="text-xl">
+              "It can pull in a Stripe expert. A testing expert. A deployment expert — on the fly."
+            </p>
+            <p className="text-2xl text-white font-bold">
+              It hires specialists instead of let simple and mediocre subagents do it.
+            </p>
+            <p className="text-xl">
+              "Every new agent published makes every existing agent more powerful."
+            </p>
+            <p className="text-3xl text-[#555555] font-bold italic">
+              "Not linear growth. Combinatorial."
+            </p>
           </div>
         </div>
       </section>
