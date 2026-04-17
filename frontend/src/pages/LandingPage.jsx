@@ -96,13 +96,13 @@ export const LandingPage = () => {
           </h2>
 
           <div className="space-y-6 text-2xl text-gray-700 leading-relaxed max-w-4xl">
-            <p>"Websites? We share a URL."</p>
-            <p>"Apps? <span className="font-mono bg-gray-200 px-2 py-1">.apk</span>. <span className="font-mono bg-gray-200 px-2 py-1">.exe</span>. App Store."</p>
-            <p>"Libraries? <span className="font-mono bg-gray-200 px-2 py-1">npm install</span>. <span className="font-mono bg-gray-200 px-2 py-1">brew install</span>. <span className="font-mono bg-gray-200 px-2 py-1">pip install</span>."</p>
-            <p className="text-black font-bold text-3xl">"Every kind of software humanity built — has a way to travel."</p>
-            <p className="text-[#555555] font-bold text-3xl italic">"Agents? Nothing."</p>
-            <p className="text-xl">"The only way to share an agent today is to wrap it in a website or an app."</p>
-            <p className="text-black font-bold text-2xl">"That's broken and sucks."</p>
+            <p>Websites? We share a URL.</p>
+            <p>Apps? <span className="font-mono bg-gray-200 px-2 py-1">.apk</span>. <span className="font-mono bg-gray-200 px-2 py-1">.exe</span>. App Store.</p>
+            <p>Libraries? <span className="font-mono bg-gray-200 px-2 py-1">npm install</span>. <span className="font-mono bg-gray-200 px-2 py-1">brew install</span>. <span className="font-mono bg-gray-200 px-2 py-1">pip install</span>.</p>
+            <p className="text-black font-bold text-3xl">Every kind of software humanity built — has a way to travel.</p>
+            <p className="text-[#555555] font-bold text-3xl italic">Agents? Nothing.</p>
+            <p className="text-xl">The only way to share an agent today is to wrap it in a website or an app.</p>
+            <p className="text-black font-bold text-2xl">That's broken and sucks.</p>
           </div>
         </div>
       </section>
@@ -118,9 +118,6 @@ export const LandingPage = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
             <div>
-              <p className="text-2xl text-gray-700 leading-relaxed mb-6">
-                The .agent format is the missing piece.
-              </p>
               <p className="text-xl text-[#555555] font-bold italic mb-6">
                 Agents so light — you can literally airdrop them.
               </p>
@@ -131,10 +128,10 @@ export const LandingPage = () => {
                 They open the file and the agent runs.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                "Framework-agnostic. LangChain, CrewAI, AutoGen, raw Python — doesn't matter."
+                Framework-agnostic. LangChain, CrewAI, AutoGen, raw Python — doesn't matter.
               </p>
               <p className="text-2xl text-black font-bold">
-                "If it's an agent — it flies."
+                If it's an agent — it flies.
               </p>
             </div>
 
@@ -180,19 +177,19 @@ export const LandingPage = () => {
               We built <span className="text-[#555555] font-bold">AgentHub</span>. A registry. Like npm — but for agents.
             </p>
             <p className="text-xl">
-              "My coding agent doesn't need to be a mediocre generalist anymore."
+              My coding agent doesn't need to be a mediocre generalist anymore.
             </p>
             <p className="text-xl">
-              "It can pull in a Stripe expert. A testing expert. A deployment expert — on the fly."
+              It can pull in a Stripe expert. A testing expert. A deployment expert — on the fly.
             </p>
             <p className="text-2xl text-white font-bold">
               It hires specialists instead of let simple and mediocre subagents do it.
             </p>
             <p className="text-xl">
-              "Every new agent published makes every existing agent more powerful."
+              Every new agent published makes every existing agent more powerful.
             </p>
             <p className="text-3xl text-[#555555] font-bold italic">
-              "Not linear growth. Combinatorial."
+              Not linear growth. Combinatorial.
             </p>
           </div>
         </div>
