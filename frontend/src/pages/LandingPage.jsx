@@ -388,48 +388,52 @@ export const LandingPage = () => {
 
         {/* Stacking Images - Full Screen Width with Subtitles */}
         <div className="relative h-[600px] w-full -mx-8">
-          {/* Image 1 - Winner at VibeCon Delhi during AI summit */}
+          {/* Image 1 */}
           <div className="absolute inset-0 animate-stack-1">
             <img 
-              src="/assets/images/vibecon.jpg" 
-              alt="VibeCon" 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=600&fit=crop&q=80" 
+              alt="Winner at VibeCon Delhi during AI summit" 
               className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
               <p className="text-2xl font-['Playfair_Display'] font-bold">Winner at VibeCon Delhi during AI summit</p>
             </div>
           </div>
           
-          {/* Image 2 - Hack this fall */}
+          {/* Image 2 */}
           <div className="absolute inset-0 animate-stack-2">
             <img 
-              src="/assets/images/hackthisfall.jpg" 
-              alt="Hack This Fall" 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1920&h=600&fit=crop&q=80" 
+              alt="Hack this fall" 
               className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
               <p className="text-2xl font-['Playfair_Display'] font-bold">Hack this fall</p>
             </div>
           </div>
           
-          {/* Image 3 - Peerlist */}
+          {/* Image 3 */}
           <div className="absolute inset-0 animate-stack-3">
             <img 
-              src="/assets/images/peerlist.jpg" 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&h=600&fit=crop&q=80" 
               alt="Peerlist" 
               className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
               <p className="text-2xl font-['Playfair_Display'] font-bold">Peerlist</p>
             </div>
           </div>
           
-          {/* Image 4 - Sundial hackathon */}
+          {/* Image 4 */}
           <div className="absolute inset-0 animate-stack-4">
             <img 
-              src="/assets/images/sundial.jpg" 
-              alt="Sundial" 
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=600&fit=crop&q=80" 
+              alt="Sundial hackathon" 
               className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
               <p className="text-2xl font-['Playfair_Display'] font-bold">Sundial hackathon</p>
