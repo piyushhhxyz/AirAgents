@@ -377,6 +377,71 @@ export const LandingPage = () => {
         </div>
       </section>
 
+      {/* This is US - Stacking Image Animation with Subtitles */}
+      <section className="py-20 px-8 bg-white border-t-2 border-gray-300 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto mb-12">
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Team</div>
+          <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight mb-8">
+            This is <span className="italic text-[#555555]">US</span>
+          </h2>
+        </div>
+
+        {/* Stacking Images - Full Screen Width with Subtitles */}
+        <div className="relative h-[600px] w-full -mx-8">
+          {/* Image 1 */}
+          <div className="absolute inset-0 animate-stack-1">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=600&fit=crop&q=80" 
+              alt="Winner at VibeCon Delhi during AI summit" 
+              className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
+              <p className="text-2xl font-['Playfair_Display'] font-bold">Winner at VibeCon Delhi during AI summit</p>
+            </div>
+          </div>
+          
+          {/* Image 2 */}
+          <div className="absolute inset-0 animate-stack-2">
+            <img 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1920&h=600&fit=crop&q=80" 
+              alt="Hack this fall" 
+              className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
+              <p className="text-2xl font-['Playfair_Display'] font-bold">Hack this fall</p>
+            </div>
+          </div>
+          
+          {/* Image 3 */}
+          <div className="absolute inset-0 animate-stack-3">
+            <img 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&h=600&fit=crop&q=80" 
+              alt="Peerlist" 
+              className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
+              <p className="text-2xl font-['Playfair_Display'] font-bold">Peerlist</p>
+            </div>
+          </div>
+          
+          {/* Image 4 */}
+          <div className="absolute inset-0 animate-stack-4">
+            <img 
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=600&fit=crop&q=80" 
+              alt="Sundial hackathon" 
+              className="w-full h-full object-cover"
+              onError={(e) => {e.target.style.display = 'none'}}
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-6">
+              <p className="text-2xl font-['Playfair_Display'] font-bold">Sundial hackathon</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pull Quote */}
       <section className="py-32 px-8 bg-black text-white">
         <div className="max-w-5xl mx-auto text-center">
