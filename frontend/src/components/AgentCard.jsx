@@ -10,11 +10,11 @@ export const AgentCard = ({ agent }) => {
   };
 
   return (
-    <div className="group bg-white border-2 border-gray-200 hover:border-[#d97757] transition-all duration-300 h-full flex flex-col">
+    <div className="group bg-white border-2 border-gray-200 hover:border-[#555555] transition-all duration-300 h-full flex flex-col">
       {/* Header */}
       <div className="p-8 border-b border-gray-200 bg-gray-50">
         <div className="flex items-start justify-between mb-3">
-          <h3 className="text-2xl font-semibold text-black group-hover:text-[#d97757] transition-colors">
+          <h3 className="text-2xl font-semibold text-black group-hover:text-[#555555] transition-colors">
             {agent.name}
           </h3>
           <div className="flex items-center gap-1.5">
@@ -59,7 +59,7 @@ export const AgentCard = ({ agent }) => {
           </div>
           <button
             onClick={handleCopy}
-            className="px-5 py-3 bg-[#d97757] hover:bg-[#c86646] text-white text-xs font-medium transition-all duration-200 whitespace-nowrap"
+            className="px-5 py-3 bg-black hover:bg-gray-800 text-white text-xs font-medium transition-all duration-200 whitespace-nowrap"
           >
             {copied ? 'Copied' : 'Copy'}
           </button>

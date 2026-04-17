@@ -25,17 +25,18 @@ export const RegistryPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      {/* Newspaper Header - Same as Landing Page */}
+      <div className="border-b-4 border-black py-6 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs uppercase tracking-widest text-gray-500">
+            AirAgents
+          </div>
+        </div>
+      </div>
       
       {/* Hero Section */}
-      <section className="pt-48 pb-20 px-6 border-b border-gray-200">
+      <section className="pt-20 pb-20 px-6 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-12">
-            <div className="inline-block border border-black px-4 py-2 text-xs uppercase tracking-widest mb-12">
-              {mockAgents.length} agents ready to deploy
-            </div>
-          </div>
-          
           <h1 className="font-['Playfair_Display'] font-black text-[96px] leading-[0.95] tracking-tight text-black mb-12">
             Agent
             <br />

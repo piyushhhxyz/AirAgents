@@ -11,7 +11,7 @@ export const mockAgents = [
     rating: 4.8,
     downloads: 12847,
     useCase: "Automatically sorts emails, flags urgent messages, and suggests quick replies. Perfect for busy professionals drowning in daily correspondence.",
-    command: ".agent install email-concierge",
+    command: "brewagent install email-concierge",
     demoVideo: "https://example.com/demo1.mp4",
     featured: true
   },
@@ -25,7 +25,7 @@ export const mockAgents = [
     rating: 4.6,
     downloads: 8924,
     useCase: "Scans thousands of sources, learns your preferences, and delivers a concise morning brief with stories that matter to you.",
-    command: ".agent install news-curator",
+    command: "brewagent install news-curator",
     demoVideo: "https://example.com/demo2.mp4",
     featured: true
   },
@@ -39,7 +39,7 @@ export const mockAgents = [
     rating: 4.9,
     downloads: 15632,
     useCase: "Integrates with your calendar, communicates with participants, and books meetings without a single message from you.",
-    command: ".agent install meeting-scheduler",
+    command: "brewagent install meeting-scheduler",
     demoVideo: "https://example.com/demo3.mp4",
     featured: false
   },
@@ -53,7 +53,7 @@ export const mockAgents = [
     rating: 4.7,
     downloads: 11203,
     useCase: "Analyzes pull requests, checks for common patterns, suggests optimizations, and ensures code quality standards.",
-    command: ".agent install code-reviewer",
+    command: "brewagent install code-reviewer",
     demoVideo: "https://example.com/demo4.mp4",
     featured: true
   },
@@ -67,7 +67,7 @@ export const mockAgents = [
     rating: 4.5,
     downloads: 9876,
     useCase: "Creates engaging content, finds optimal posting times, and maintains your social presence while you focus on your business.",
-    command: ".agent install social-manager",
+    command: "brewagent install social-manager",
     demoVideo: "https://example.com/demo5.mp4",
     featured: false
   },
@@ -81,7 +81,7 @@ export const mockAgents = [
     rating: 4.8,
     downloads: 14521,
     useCase: "Syncs with your devices, tracks patterns, and offers personalized recommendations for better sleep, nutrition, and exercise.",
-    command: ".agent install health-tracker",
+    command: "brewagent install health-tracker",
     demoVideo: "https://example.com/demo6.mp4",
     featured: false
   },
@@ -95,7 +95,7 @@ export const mockAgents = [
     rating: 4.9,
     downloads: 16789,
     useCase: "Connects to your accounts, categorizes expenses, alerts you to unusual spending, and suggests smart financial moves.",
-    command: ".agent install finance-advisor",
+    command: "brewagent install finance-advisor",
     demoVideo: "https://example.com/demo7.mp4",
     featured: true
   },
@@ -109,7 +109,7 @@ export const mockAgents = [
     rating: 4.6,
     downloads: 10145,
     useCase: "Adapts to your learning style, breaks down complex topics, and uses spaced repetition to maximize retention.",
-    command: ".agent install learning-companion",
+    command: "brewagent install learning-companion",
     demoVideo: "https://example.com/demo8.mp4",
     featured: false
   },
@@ -123,7 +123,7 @@ export const mockAgents = [
     rating: 4.7,
     downloads: 12334,
     useCase: "Considers your preferences and budget, monitors prices, books accommodations, and plans activities for unforgettable trips.",
-    command: ".agent install travel-planner",
+    command: "brewagent install travel-planner",
     demoVideo: "https://example.com/demo9.mp4",
     featured: false
   },
@@ -137,7 +137,7 @@ export const mockAgents = [
     rating: 4.8,
     downloads: 13892,
     useCase: "Learns your work patterns, estimates task duration, and reorders your list to maximize daily productivity.",
-    command: ".agent install task-prioritizer",
+    command: "brewagent install task-prioritizer",
     demoVideo: "https://example.com/demo10.mp4",
     featured: true
   }
