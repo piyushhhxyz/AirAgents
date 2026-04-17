@@ -40,7 +40,7 @@ export const LandingPage = () => {
                 to="/registry"
                 className="inline-block px-10 py-5 bg-black text-white text-lg font-semibold hover:bg-gray-800 transition-all"
               >
-                Browse Agent Registry →
+                Browse AgentHub →
               </Link>
             </div>
           </div>
@@ -124,9 +124,6 @@ export const LandingPage = () => {
               <p className="text-lg text-gray-700 mb-6">
                 One file that travels. Airdrop it. Email it. Post it. The person receiving it doesn't need your platform, your environment, or your workflow.
               </p>
-              <p className="text-2xl text-black font-bold italic mb-8">
-                They open the file and the agent runs.
-              </p>
               <p className="text-lg text-gray-700 mb-4">
                 Framework-agnostic. LangChain, CrewAI, AutoGen, raw Python — doesn't matter.
               </p>
@@ -204,17 +201,17 @@ export const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-black text-white p-6 font-mono text-xs">
               <div className="text-gray-400 mb-1"># bundle</div>
-              <div className="mb-3">$ agentbox pack ./my-tax-agent</div>
+              <div className="mb-3">$ brewagent pack ./my-tax-agent</div>
               <div className="text-gray-400 mb-4 text-xs">✓ packed → my-tax-agent.agent (2.1 MB)</div>
               
               <div className="text-gray-400 mb-1 mt-4"># publish</div>
-              <div className="mb-3">$ agentbox publish --name @piyush/tax-agent</div>
-              <div className="text-gray-400 mb-4 text-xs">✓ live at the-nest.sh/@piyush/tax-agent</div>
+              <div className="mb-3">$ brewagent publish --name @piyush/tax-agent</div>
+              <div className="text-gray-400 mb-4 text-xs">✓ live at agenthub.sh/@piyush/tax-agent</div>
               
               <div className="text-gray-400 mb-1 mt-4"># install & run</div>
-              <div className="mb-1">$ agentbox install @piyush/tax-agent</div>
+              <div className="mb-1">$ brewagent install @piyush/tax-agent</div>
               <div className="text-gray-400 mb-3 text-xs">✓ installed in 2.8s</div>
-              <div>$ agentbox run tax-agent -m "What can I deduct?"</div>
+              <div>$ brewagent run tax-agent -m "What can I deduct?"</div>
             </div>
 
             <div className="grid grid-cols-1 gap-3">
@@ -317,13 +314,13 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* The Nest Registry */}
+      {/* AgentHub Registry */}
       <section className="py-20 px-8 border-t-2 border-gray-300">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Platform</div>
             <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight mb-6">
-              Introducing <span className="italic text-[#555555]">The Nest</span> —
+              Introducing <span className="italic text-[#555555]">AgentHub</span> —
             </h2>
             <p className="text-2xl text-gray-700 italic">
               the agent registry. Think npm, but for AI agents.
@@ -332,7 +329,7 @@ export const LandingPage = () => {
 
           <div className="bg-gray-50 border-2 border-gray-300 p-8 mb-6">
             <div className="flex justify-between items-center mb-4 pb-4 border-b-2 border-gray-300">
-              <div className="font-mono text-[#555555] text-xl">the-nest.sh</div>
+              <div className="font-mono text-[#555555] text-xl">agenthub.sh</div>
               <div className="text-xs text-gray-500">12,847 agents · 2.1M installs</div>
             </div>
 
@@ -371,8 +368,8 @@ export const LandingPage = () => {
               </div>
 
               <div className="text-center py-4">
-                <Link to="/registry" className="text-sm text-gray-500 hover:text-black">
-                  more →
+                <Link to="/registry" className="text-sm text-gray-500 hover:text-[#555555]">
+                  explore AgentHub →
                 </Link>
               </div>
             </div>
@@ -395,13 +392,13 @@ export const LandingPage = () => {
             <br />
             Code needed GitHub.
             <br />
-            <span className="italic">Agents need The Nest.</span>
+            <span className="italic">Agents need AgentHub.</span>
           </p>
           <Link 
             to="/registry"
             className="inline-block px-12 py-6 bg-white text-black text-xl font-semibold hover:bg-gray-200 transition-all"
           >
-            Explore the Registry →
+            Explore AgentHub →
           </Link>
         </div>
       </section>
