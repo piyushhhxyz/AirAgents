@@ -377,6 +377,35 @@ export const LandingPage = () => {
         </div>
       </section>
 
+      {/* This is US - Infinite Scroll */}
+      <section className="py-20 px-8 bg-white border-t-2 border-gray-300 overflow-hidden">
+        <div className="max-w-7xl mx-auto mb-12">
+          <div className="text-xs uppercase tracking-widest text-gray-400 mb-4">The Team</div>
+          <h2 className="text-6xl font-['Playfair_Display'] font-black text-black leading-tight">
+            This is <span className="italic text-[#555555]">US</span>
+          </h2>
+        </div>
+
+        {/* Infinite Scroll Container */}
+        <div className="relative">
+          <div className="animate-scroll flex gap-6">
+            {/* First set of images */}
+            <img src="/assets/images/team1.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team2.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team3.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team4.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team5.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            
+            {/* Duplicate set for seamless loop */}
+            <img src="/assets/images/team1.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team2.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team3.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team4.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="/assets/images/team5.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+          </div>
+        </div>
+      </section>
+
       {/* Pull Quote */}
       <section className="py-32 px-8 bg-black text-white">
         <div className="max-w-5xl mx-auto text-center">
