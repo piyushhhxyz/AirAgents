@@ -387,21 +387,21 @@ export const LandingPage = () => {
         </div>
 
         {/* Infinite Scroll Container */}
-        <div className="relative">
-          <div className="animate-scroll flex gap-6">
-            {/* First set of images */}
-            <img src="/assets/images/team1.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team2.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team3.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team4.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team5.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+        <div className="relative max-w-7xl mx-auto">
+          <div className="flex animate-scroll gap-6">
+            {/* First set of images - Using placeholder images */}
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
             
             {/* Duplicate set for seamless loop */}
-            <img src="/assets/images/team1.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team2.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team3.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team4.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
-            <img src="/assets/images/team5.jpg" alt="Team" className="h-64 w-auto object-cover rounded" />
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Team" className="h-64 w-96 object-cover rounded border-2 border-gray-300" />
           </div>
         </div>
       </section>
