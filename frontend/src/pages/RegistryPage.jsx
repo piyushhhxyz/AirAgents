@@ -38,9 +38,7 @@ export const RegistryPage = () => {
       <section className="pt-20 pb-20 px-6 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
           <h1 className="font-['Playfair_Display'] font-black text-[96px] leading-[0.95] tracking-tight text-black mb-12">
-            Agent
-            <br />
-            <span className="italic">Registry.</span>
+            <span className="italic">AgentHub.</span>
           </h1>
           
           <p className="text-[18px] text-gray-600 leading-relaxed mb-16 max-w-2xl">
